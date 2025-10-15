@@ -1,95 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learn With Mr. Oddlaw – Law, Unfiltered</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>How to Win in Court Without a Lawyer | Learn With Mr. Oddlaw</title>
+  <meta name="description" content="Courtroom procedure for everyday people. Learn the rules lawyers use—filings, deadlines, objections, and evidence—from a course recommended by Mr. Oddlaw. Because rights you can’t enforce… ain’t rights." />
+  <meta name="theme-color" content="#111111" />
+
+  <!-- Open Graph / Twitter Card -->
+  <meta property="og:title" content="How to Win in Court Without a Lawyer — Learn With Mr. Oddlaw" />
+  <meta property="og:description" content="A step-by-step courtroom-procedure program recommended by Mr. Oddlaw. Learn to file, serve, and present evidence that counts." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/social-preview.jpg" />
+  <meta property="og:url" content="https://YOURUSERNAME.github.io/learnwithoddlaw/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="images/social-preview.jpg" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background-color: #111;
-      color: #f8f8f8;
-      text-align: center;
-      padding: 80px 20px;
+    :root{
+      --bg:#111;--text:#f8f8f8;--muted:#bdbdbd;
+      --gold:#D4A017;--caramel:#B68655;--red:#C7311E;--red-d:#A62616;
+      --espresso:#2E1C10;--maxw:1120px;
     }
-    h1 {
-      color: #D4A017;
-      font-size: 2.3em;
-      margin-bottom: 0.3em;
+    *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;scroll-behavior:smooth}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+    h1,h2,h3{line-height:1.1;margin:0 0 16px}
+    h1{font-size:clamp(2rem,5vw,3.2rem)}
+    h2{font-size:clamp(1.6rem,3.5vw,2.2rem)}
+    h3{font-size:1.2rem;color:var(--gold)}
+    p{margin:0 0 14px;font-size:1.05rem}
+    .btn{display:inline-block;background:var(--red);color:#fff;padding:14px 22px;border-radius:10px;font-weight:800;box-shadow:0 6px 24px rgba(0,0,0,.35);transition:.2s background,.2s transform}
+    .btn:hover{background:var(--red-d);transform:translateY(-1px)}
+    .section{padding:96px 0;border-top:1px solid rgba(255,255,255,.05)}
+    .eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.18em;font-weight:800;font-size:.82rem}
+    .hero{position:relative;overflow:hidden;padding:42px 0 24px}
+    .hero::before{
+      content:"";position:absolute;inset:0;
+      background:
+        radial-gradient(1200px 500px at 75% 20%, rgba(212,160,23,.15), transparent 60%),
+        radial-gradient(900px 500px at 10% 80%, rgba(198,49,30,.12), transparent 60%),
+        url('https://www.transparenttextures.com/patterns/felt.png');
+      opacity:.9;pointer-events:none;
     }
-    h2 {
-      color: #B68655;
-      font-size: 1.5em;
-      margin-bottom: 0.8em;
-    }
-    p {
-      font-size: 1.15em;
-      line-height: 1.6;
-      max-width: 720px;
-      margin: 0 auto 1.2em auto;
-    }
-    a.button {
-      display: inline-block;
-      background-color: #C7311E;
-      color: #fff;
-      text-decoration: none;
-      padding: 15px 30px;
-      border-radius: 8px;
-      font-size: 1.1em;
-      font-weight: bold;
-      margin-top: 20px;
-      transition: background 0.3s;
-    }
-    a.button:hover {
-      background-color: #A62616;
-    }
-    .tagline {
-      font-style: italic;
-      color: #D4A017;
-      margin-top: 25px;
-      font-size: 1em;
-    }
-    .disclaimer {
-      color: #888;
-      font-size: 0.85em;
-      margin-top: 60px;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.5;
-    }
-    footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #777;
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
+    .hero-copy{padding:48px 0}
+    .micro{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0 24px}
+    .micro .chip{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:8px 12px;border-radius:999px;font-size:.92rem}
+    .hero-figure{display:flex;justify-content:center}
+    .hero-figure img{width:min(520px,100%);filter:drop-shadow(0 30px 40px rgba(0,0,0,.45))}
+    .note{font-size:.95rem;color:var(--muted);margin-top:10px}
+    .stripe{background:linear-gradient(180deg,rgba(255,255,255,.04),transparent);padding:24px;border-radius:14px;border:1px solid rgba(255,255,255,.06)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+    .callout{background:rgba(182,134,85,.12);border:1px solid rgba(212,160,23,.25);padding:20px;border-radius:12px}
+    .testi{background:#181818;border:1px solid rgba(255,255,255,.06);padding:20px;border-radius:12px}
+    .faq dt{font-weight:800;margin:18px 0 6px}
+    .faq dd{margin:0 0 12px;color:#d7d7d7}
+    footer{padding:48px 0;color:#a8a8a8;border-top:1px solid rgba(255,255,255,.05)}
+    .disclosure{font-size:.9rem;color:#b8b8b8}
+    @media (max-width:960px){
+      .hero-grid{grid-template-columns:1fr}
+      .hero-copy{text-align:center}
+      .micro{justify-content:center}
+      .grid-3{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
     }
   </style>
 </head>
 
 <body>
-  <h1>Mr. Oddlaw Says: Learn the Rules… or Get Legally Fooled.</h1>
-  <h2>Law, Unfiltered. Power for the People.</h2>
 
-  <p>Most folks think justice is automatic — until it’s their turn in court.  
-  <strong>Mr. Oddlaw</strong> believes every American should learn how the system really works.  
-  That’s why he recommends the <strong>“How to Win in Court”</strong> program by Dr. Frederick Graves —  
-  a real course that teaches the courtroom rules lawyers use every day.</p>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">Law, Unfiltered</div>
+        <h1>How to <span style="color:var(--gold)">Win in Court</span> Without a Lawyer</h1>
+        <p>Courtroom procedure for everyday people. Learn the rules lawyers and even some judges overlook—filings, deadlines, objections, and evidence—so your facts actually count.</p>
+        <div class="micro">
+          <div class="chip">Avoid dismissal errors</div>
+          <div class="chip">Serve & file correctly</div>
+          <div class="chip">Make evidence admissible</div>
+        </div>
+        <p><a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">Start Learning Now →</a></p>
+        <p class="note">Rights you can’t enforce… ain’t rights.</p>
+      </div>
+      <div class="hero-figure">
+        <img src="images/oddlaw-hero.png" alt="Mr. Oddlaw felt puppet legal educator holding briefcase with scales emblem" />
+      </div>
+    </div>
+  </header>
 
-  <a href="https://www.howtowinincourt.com?refercode=LT0031" 
-     class="button" target="_blank">
-    Start Learning Now →
-  </a>
+  <!-- STORY / EMPATHY -->
+  <section class="section">
+    <div class="wrap grid-2">
+      <div>
+        <h2>The System Wasn’t Broken — It Was Built This Way.</h2>
+        <p>People don’t lose in court because they’re bad or wrong—they lose because the courtroom runs on <strong>procedure</strong>, not emotion. Endless delays, adjournments, and hidden rules wear people down until they give up.</p>
+        <div class="callout"><p><em>“Ignorance isn’t just dangerous — it’s fatal.”</em> If you’ve ever felt the game is rigged, you’re not alone. The good news? Procedure is teachable.</p></div>
+      </div>
+      <div class="stripe">
+        <h3>What People Say</h3>
+        <ul>
+          <li>“The process itself feels like punishment.”</li>
+          <li>“I spent years and still didn’t get justice.”</li>
+          <li>“Smart lawyers know how to win — or how to make you lose.”</li>
+        </ul>
+        <p>Now you can learn the same rules they hide behind.</p>
+      </div>
+    </div>
+  </section>
 
-  <p class="tagline">Because rights you can’t enforce… ain’t rights.</p>
+  <!-- HIDDEN CURRICULUM -->
+  <section class="section">
+    <div class="wrap grid-2">
+      <div>
+        <h2>The Courtroom’s Hidden Curriculum</h2>
+        <p>The courtroom doesn’t reward passion—it rewards <strong>precision</strong>. Dr. Frederick Graves spent decades in real trials refining what actually wins. His course teaches proven techniques many lawyers and even some judges don’t know — in plain English you can use today.</p>
+      </div>
+      <div class="stripe">
+        <h3>Myth vs Reality</h3>
+        <ul>
+          <li><strong>Myth:</strong> Justice depends on truth.</li>
+          <li><strong>Reality:</strong> Outcomes depend on process.</li>
+          <li><strong>Myth:</strong> You need a law degree.</li>
+          <li><strong>Reality:</strong> You need rules + steps + checklists.</li>
+        </ul>
+        <p style="margin-top:10px"><a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">See the Program →</a></p>
+      </div>
+    </div>
+  </section>
 
-  <div class="disclaimer">
-    <p><strong>Affiliate Disclosure:</strong> LearnWithOddlaw.com participates as an independent affiliate for the <em>How to Win in Court</em> program by Dr. Frederick Graves.  
-    If you make a purchase through this link (<code>refercode=LT0031</code>), Tanya Lawson — creator of Mr. Oddlaw — may receive a commission at no additional cost to you.</p>
-    <p>This page and the Mr. Oddlaw character are for educational and entertainment purposes only.  
-    This is not legal advice, and Mr. Oddlaw is not a licensed attorney offering representation.</p>
-  </div>
+  <!-- WHAT YOU'LL LEARN -->
+  <section class="section">
+    <div class="wrap">
+      <h2>What You’ll Learn (Plain English. Courtroom Real.)</h2>
+      <div class="grid-3" style="margin-top:16px">
+        <div class="stripe"><h3>File & Serve Correctly</h3><p>Step-by-step guidance so your case isn’t tossed on a technicality.</p></div>
+        <div class="stripe"><h3>Evidence That Counts</h3><p>Prepare and introduce proof that’s admissible and credible.</p></div>
+        <div class="stripe"><h3>Motion & Hearing Basics</h3><p>Timing, structure, and delivery — know what to say and when.</p></div>
+      </div>
+      <div class="grid-3" style="margin-top:16px">
+        <div class="stripe"><h3>Templates & Checklists</h3><p>Reduce guesswork with ready-to-adapt frameworks.</p></div>
+        <div class="stripe"><h3>Confidence in the Room</h3><p>Understand what judges expect and stay composed.</p></div>
+        <div class="stripe"><h3>Decades of Technique</h3><p>Procedural tactics distilled from years in court — the details most people never learn.</p></div>
+      </div>
+      <p style="margin-top:22px"><a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">Start Learning Now →</a></p>
+    </div>
+  </section>
 
-  <footer>© 2025 Tanya Lawson | Mr. Oddlaw – Law, Unfiltered.</footer>
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="wrap">
+      <h2>From Frustration to Clarity</h2>
+      <div class="grid-3" style="margin-top:16px">
+        <div class="testi"><p>“After years of confusion, I finally understood why I kept losing — and how to fix it.”</p><p style="color:#bdbdbd">— Course Graduate</p></div>
+        <div class="testi"><p>“Used the checklist to file the right way. The judge thanked me for being prepared.”</p><p style="color:#bdbdbd">— Self-Represented Litigant</p></div>
+        <div class="testi"><p>“I wish I’d taken this before court — it would have saved months of pain.”</p><p style="color:#bdbdbd">— Parent in Family Court</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOPE -->
+  <section class="section">
+    <div class="wrap grid-2">
+      <div>
+        <h2>Our Hope for You</h2>
+        <p>That you gain calm confidence from knowing the rules and seeing that law can work for you when you understand it.</p>
+        <p>It’s not about arguing harder — it’s about acting correctly.</p>
+      </div>
+      <div class="stripe">
+        <h3>Who This Is For</h3>
+        <ul><li>Tenants, consumers, small-claims, family matters.</li><li>People priced out of representation — or burned by it.</li><li>Anyone determined to never lose on a technicality again.</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <h2>FAQ</h2>
+      <dl class="faq">
+        <dt>Is this legal advice?</dt>
+        <dd>No. This is an educational affiliate page for Dr. Frederick Graves’ program. For legal advice, consult a licensed attorney.</dd>
+        <dt>How fast can I learn?</dt>
+        <dd>Modules are bite-size. Most people get oriented in a weekend and revisit as their case progresses.</dd>
+        <dt>Will this help if I already filed?</dt>
+        <dd>Yes — procedure knowledge helps at every stage: filing, motions, discovery, hearings.</dd>
+      </dl>
+      <p style="margin-top:18px"><a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">Begin the Course →</a></p>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="section">
+    <div class="wrap" style="text-align:center">
+      <h2>Don’t wait for the system to care — learn how to make it listen.</h2>
+      <p>For decades this knowledge stayed locked inside courtrooms. Today, it’s yours.</p>
+      <p style="margin-top:12px"><a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">Learn With Mr. Oddlaw →</a></p>
+      <p class="note">Mr. Oddlaw says: Learn the rules… or get legally fooled.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <p class="disclosure"><strong>Affiliate Disclosure:</strong> This site is an independent educational affiliate for the <em>How to Win in Court</em> program by Dr. Frederick Graves. If you purchase through this link (<code>refercode=LT0031</code>), Tanya Lawson — creator of Mr. Oddlaw — may receive a commission at no additional cost to you. This is not legal advice or representation.</p>
+      <p style="margin-top:10px">© 2025 Tanya Lawson · Mr. Oddlaw — Law, Unfiltered.</p>
+    </div>
+  </footer>
 </body>
 </html>
