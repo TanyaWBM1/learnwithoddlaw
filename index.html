@@ -20,7 +20,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
-  <!-- Structured Data JSON-LD -->
+  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -47,26 +47,6 @@
   }
   </script>
 
-  <!-- Optional Analytics / Meta Pixel -->
-  <!--
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX');
-  </script>
-
-  <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
-    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init','YOUR_PIXEL_ID');fbq('track','PageView');
-  </script>
-  -->
-
   <style>
     :root{
       --bg:#111;--text:#f8f8f8;--muted:#bdbdbd;
@@ -74,17 +54,15 @@
       --maxw:1120px;
     }
     *{box-sizing:border-box}
-    html,body{
-      margin:0;background:var(--bg);color:var(--text);
+    html,body{margin:0;background:var(--bg);color:var(--text);
       font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      scroll-behavior:smooth;font-size:1.15rem;
-    }
+      scroll-behavior:smooth;font-size:1.15rem}
     img{max-width:100%;display:block}
     a{color:inherit;text-decoration:none}
     .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
-    h1,h2,h3{line-height:1.1;margin:0 0 16px;text-align:center}
-    h1{font-size:clamp(2.2rem,5vw,3.5rem)}
-    h2{font-size:clamp(1.9rem,4vw,2.5rem);position:relative;padding-bottom:14px;margin-bottom:28px}
+    h1,h2,h3{line-height:1.1;margin:0 0 16px}
+    h1{font-size:clamp(2.4rem,5vw,3.6rem)}
+    h2{font-size:clamp(1.9rem,4vw,2.5rem);position:relative;padding-bottom:14px;margin-bottom:28px;text-align:center}
     h2::after{content:"";position:absolute;left:50%;bottom:0;transform:translateX(-50%);
       width:140px;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent);
       border-radius:2px;}
@@ -96,26 +74,37 @@
     .section{padding:90px 0;border-top:1px solid rgba(255,255,255,.05)}
     .eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.18em;
       font-weight:800;font-size:1.2rem;margin-bottom:10px}
-    .hero{text-align:center;padding:50px 0 30px}
-    .hero img.brand{width:220px;margin:0 auto 25px;filter:drop-shadow(0 10px 12px rgba(0,0,0,.4))}
-    .note{font-size:1.25rem;color:var(--gold);font-weight:600;margin-top:15px;}
-    .micro{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin:20px 0 30px}
+
+    /* HERO */
+    .hero{padding:90px 0;background:radial-gradient(1000px 500px at 15% 40%, rgba(212,160,23,.08), transparent 70%);}
+    .hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px}
+    .hero-text h1{margin-bottom:20px}
+    .hero-text p{font-size:1.15rem;line-height:1.6}
+    .micro{display:flex;gap:14px;flex-wrap:wrap;justify-content:left;margin:20px 0 30px}
     .micro .chip{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
       padding:10px 14px;border-radius:999px;font-size:1rem}
-    .micro.gold .chip{background:rgba(212,160,23,.15);border:1px solid var(--gold);
-      color:var(--gold);font-size:1.15rem;font-weight:700;padding:14px 20px}
-    .stripe,.callout,.testi{background:#181818;border:1px solid rgba(255,255,255,.06);
+    .btn-wrap{text-align:left}
+    .note{font-size:1.25rem;color:var(--gold);font-weight:600;margin-top:15px;text-align:left}
+    .hero-img{text-align:center}
+    .hero-img img{width:min(460px,100%);filter:drop-shadow(0 25px 30px rgba(0,0,0,.45))}
+
+    /* GRIDS */
+    .stripe,.callout{background:#181818;border:1px solid rgba(255,255,255,.06);
       border-radius:14px;padding:28px 22px;display:flex;flex-direction:column;
-      justify-content:center;text-align:center;min-height:240px;}
+      justify-content:center;text-align:center;min-height:240px}
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
     .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+    footer{padding:48px 0;color:#a8a8a8;border-top:1px solid rgba(255,255,255,.05);text-align:center}
+    .disclosure{font-size:.9rem;color:#b8b8b8;margin-top:24px}
+    .micro.gold .chip{background:rgba(212,160,23,.15);border:1px solid var(--gold);
+      color:var(--gold);font-size:1.15rem;font-weight:700;padding:14px 20px}
     .share-links{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:14px}
     .share-links a{color:var(--gold);font-weight:600;font-size:1.05rem;border-bottom:1px solid transparent;
       transition:color .3s,border .3s}
     .share-links a:hover{color:var(--red);border-bottom:1px solid var(--red)}
-    footer{padding:48px 0;color:#a8a8a8;border-top:1px solid rgba(255,255,255,.05);text-align:center}
-    .disclosure{font-size:.9rem;color:#b8b8b8;margin-top:24px}
-    @media (max-width:960px){.grid-3,.grid-2{grid-template-columns:1fr}html,body{font-size:1.08rem}}
+    @media (max-width:960px){.hero-grid{grid-template-columns:1fr;text-align:center}
+      .btn-wrap{text-align:center}.micro{justify-content:center}.note{text-align:center}
+      .grid-3,.grid-2{grid-template-columns:1fr}html,body{font-size:1.08rem}}
   </style>
 </head>
 
@@ -123,29 +112,32 @@
 
   <!-- HERO -->
   <header class="hero">
-    <img class="brand" src="images/oddlaw-hero.png" alt="Mr. Oddlaw felt puppet legal educator" />
-    <div class="wrap">
-      <div class="eyebrow">Law, Unfiltered</div>
-      <h1>How to <span style="color:var(--gold)">Win in Court</span> Without a Lawyer</h1>
-      <p>Learn courtroom procedure and legal self-help the way lawyers do — in plain English for everyday people like YOU, homeschoolers, and students of law who want to understand the system before they need it.</p>
-      <div class="micro">
-
-        <div class="micro gold" style="margin-bottom:30px">
-        <div class="chip">Avoid Dismissal Errors</div>
-        <div class="chip">Serve & File Correctly</div>
-        <div class="chip">Make Evidence Admissible</div>
-          
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <div class="eyebrow">Law, Unfiltered</div>
+        <h1>How to <span style="color:var(--gold)">Win in Court</span> Without a Lawyer</h1>
+        <p>Learn courtroom procedure and legal self-help the way lawyers do — in plain English for everyday people like <strong>you</strong>, homeschoolers, and students of law who want to understand the system before they need it.</p>
+        <div class="micro">
+          <div class="chip">Avoid Dismissal Errors</div>
+          <div class="chip">Serve & File Correctly</div>
+          <div class="chip">Make Evidence Admissible</div>
+        </div>
+        <div class="btn-wrap">
+          <a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">Start Learning Now →</a>
+        </div>
+        <p class="note">Rights you can’t enforce… ain’t rights.</p>
       </div>
-      <p><a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">Start Learning Now →</a></p>
-        
-      <p class="note">Rights you can’t enforce… ain’t rights.</p>
+
+      <div class="hero-img">
+        <img src="images/oddlaw-hero.png" alt="Mr. Oddlaw felt puppet legal educator holding briefcase" />
+      </div>
     </div>
   </header>
 
   <!-- STORY -->
   <section class="section">
     <div class="wrap">
-      <h2>The System Isn’t Broken — It Was Built This Way.</h2>
+      <h2>The System Wasn’t Broken — It Was Built This Way.</h2>
       <p>People don’t lose in court because they’re bad or wrong — they lose because the courtroom runs on <strong>procedure</strong>, not emotion. Endless delays, adjournments, and hidden rules wear people down until they give up.</p>
       <p>Even if you’re not in court today, the best time to learn is <strong>before</strong> you ever need it. Knowledge of procedure empowers you to help yourself or guide friends, family, and community members through the maze.</p>
       <div class="grid-2" style="margin-top:40px">
@@ -169,10 +161,7 @@
       </div>
       <div class="stripe">
         <h3>Myth vs Reality</h3>
-        <p><strong>Myth:</strong> Justice depends on truth.<br>
-           <strong>Reality:</strong> Outcomes depend on process.<br>
-           <strong>Myth:</strong> You need a law degree.<br>
-           <strong>Reality:</strong> You need rules + steps + checklists.</p>
+        <p><strong>Myth:</strong> Justice depends on truth.<br><strong>Reality:</strong> Outcomes depend on process.<br><strong>Myth:</strong> You need a law degree.<br><strong>Reality:</strong> You need rules + steps + checklists.</p>
         <p><a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">See the Program →</a></p>
       </div>
     </div>
@@ -196,7 +185,7 @@
   <!-- THREE EASY STEPS -->
   <section class="section" id="three-steps">
     <div class="wrap" style="text-align:center">
-      <h2>3 Easy Steps to Justice</h2>
+      <h2>Three Easy Steps to Justice</h2>
 
       <div class="micro gold" style="margin-bottom:30px">
         <div class="chip">#1 Allege the Facts</div>
@@ -211,9 +200,9 @@
         <div class="stripe">
           <h3>Practical Power</h3>
           <ul style="text-align:left;line-height:1.7;margin-left:30px;margin-bottom:20px">
-            <li><strong>Key to the Courthouse</strong> — the information and confidence to stand your ground.</li>
-            <li><strong>Navigate court procedures and rules of evidence</strong> essential skills rarely taught, but crucial for success.</li>
-            <li>Say goodbye to <strong>crippling legal fees.</strong> Say hello to an affordable system that works for you.</li>
+            <li>Learn how to <strong>control biased judges</strong> using procedural rules that protect fairness.</li>
+            <li>Defeat <strong>crooked lawyers</strong> who rely on confusion and intimidation.</li>
+            <li>Gain the <strong>Key to the Courthouse</strong> — the information and confidence to stand your ground.</li>
           </ul>
           <p>Includes lessons in <strong>text, audio, and video</strong> formats — plus over <strong>50 legal forms</strong> you can copy, customize, and submit yourself.</p>
           <p><strong>Enforce your rights</strong> with common-sense tactics anyone — even an eighth grader — can learn in a single weekend.</p>
@@ -256,7 +245,7 @@
   <!-- FINAL CTA -->
   <section class="section">
     <div class="wrap" style="text-align:center">
-      <h2>Don’t Wait For The System To Care.<br><span style="font-size:1.9rem;color:var(--text);display:block;margin-top:6px;">(Learn How To Make It Listen!)</span></h2>
+      <h2>Don’t wait for the system to care<br><span style="font-size:1.9rem;color:var(--text);display:block;margin-top:6px;">(learn how to make it listen.)</span></h2>
       <p>For decades this knowledge stayed locked inside courtrooms. Today, it’s yours. The earlier you start learning, the stronger you’ll be when it matters.</p>
       <p style="margin-top:16px"><a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">Learn With Mr. Oddlaw →</a></p>
       <p class="note">Mr. Oddlaw says: Learn the rules… or get legally fooled.</p>
