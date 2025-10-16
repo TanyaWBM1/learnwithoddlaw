@@ -6,17 +6,13 @@
   <title>How to Win in Court Without a Lawyer | Learn With Mr. Oddlaw</title>
   <meta name="description" content="Courtroom procedure for everyday people. Learn the rules lawyers use—filings, deadlines, objections, and evidence—from a course recommended by Mr. Oddlaw. Because rights you can’t enforce… ain’t rights." />
   <meta name="theme-color" content="#111111" />
-
-  <!-- Open Graph / Twitter Card -->
   <meta property="og:title" content="How to Win in Court Without a Lawyer — Learn With Mr. Oddlaw" />
-  <meta property="og:description" content="A step-by-step courtroom-procedure program recommended by Mr. Oddlaw. Learn to file, serve, and present evidence that counts." />
+  <meta property="og:description" content="A step-by-step courtroom-procedure program recommended by Mr. Oddlaw." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="images/social-preview.jpg" />
   <meta property="og:url" content="https://learnwithoddlaw.com/" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="images/social-preview.jpg" />
-
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
   <style>
@@ -26,50 +22,54 @@
       --espresso:#2E1C10;--maxw:1120px;
     }
     *{box-sizing:border-box}
-    html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;scroll-behavior:smooth}
+    html,body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      scroll-behavior:smooth;
+      font-size:1.12rem;
+    }
     img{max-width:100%;display:block}
     a{color:inherit;text-decoration:none}
     .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
     h1,h2,h3{line-height:1.1;margin:0 0 16px}
     h1{font-size:clamp(2rem,5vw,3.2rem)}
-    h2{font-size:clamp(1.6rem,3.5vw,2.2rem)}
-    h3{font-size:1.2rem;color:var(--gold)}
-    p{margin:0 0 14px;font-size:1.05rem}
-    .btn{display:inline-block;background:var(--red);color:#fff;padding:14px 22px;border-radius:10px;font-weight:800;box-shadow:0 6px 24px rgba(0,0,0,.35);transition:.2s background,.2s transform}
-    .btn:hover{background:var(--red-d);transform:translateY(-1px)}
-    .section{padding:96px 0;border-top:1px solid rgba(255,255,255,.05)}
-    .eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.18em;font-weight:800;font-size:.82rem}
-    .hero{position:relative;overflow:hidden;padding:42px 0 24px}
-    .hero::before{
-      content:"";position:absolute;inset:0;
-      background:
-        radial-gradient(1200px 500px at 75% 20%, rgba(212,160,23,.15), transparent 60%),
-        radial-gradient(900px 500px at 10% 80%, rgba(198,49,30,.12), transparent 60%),
-        url('https://www.transparenttextures.com/patterns/felt.png');
-      opacity:.9;pointer-events:none;
+    h2{font-size:clamp(1.8rem,4vw,2.4rem)}
+    h3{font-size:1.25rem;color:var(--gold)}
+    p{margin:0 0 18px}
+    .btn{
+      display:inline-block;background:var(--red);color:#fff;
+      padding:16px 26px;border-radius:10px;font-weight:800;
+      box-shadow:0 6px 24px rgba(0,0,0,.35);
+      transition:.2s background,.2s transform
     }
-    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
-    .hero-copy{padding:48px 0}
-    .micro{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0 24px}
-    .micro .chip{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:8px 12px;border-radius:999px;font-size:.92rem}
-    .hero-figure{display:flex;justify-content:center}
-    .hero-figure img{width:min(520px,100%);filter:drop-shadow(0 30px 40px rgba(0,0,0,.45))}
-    .note{font-size:.95rem;color:var(--muted);margin-top:10px}
-    .stripe{background:linear-gradient(180deg,rgba(255,255,255,.04),transparent);padding:24px;border-radius:14px;border:1px solid rgba(255,255,255,.06)}
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-    .callout{background:rgba(182,134,85,.12);border:1px solid rgba(212,160,23,.25);padding:20px;border-radius:12px}
-    .testi{background:#181818;border:1px solid rgba(255,255,255,.06);padding:20px;border-radius:12px}
-    .faq dt{font-weight:800;margin:18px 0 6px}
-    .faq dd{margin:0 0 12px;color:#d7d7d7}
-    footer{padding:48px 0;color:#a8a8a8;border-top:1px solid rgba(255,255,255,.05)}
-    .disclosure{font-size:.9rem;color:#b8b8b8}
+    .btn:hover{background:var(--red-d);transform:translateY(-1px)}
+    .section{padding:90px 0;border-top:1px solid rgba(255,255,255,.05)}
+    .eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.18em;font-weight:800;font-size:.9rem}
+    .hero{position:relative;overflow:hidden;padding:40px 0 20px;text-align:center}
+    .hero img.brand{width:200px;margin:0 auto 20px;filter:drop-shadow(0 10px 12px rgba(0,0,0,.4))}
+    .micro{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin:20px 0 30px}
+    .micro .chip{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:10px 14px;border-radius:999px;font-size:.95rem}
+    .note{font-size:1rem;color:var(--muted);margin-top:10px}
+    .stripe,.callout,.testi{
+      background:#181818;
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:14px;
+      padding:36px 24px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      text-align:center;
+      height:100%;
+    }
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+    footer{padding:48px 0;color:#a8a8a8;border-top:1px solid rgba(255,255,255,.05);text-align:center}
+    .disclosure{font-size:.9rem;color:#b8b8b8;margin-top:24px}
     @media (max-width:960px){
-      .hero-grid{grid-template-columns:1fr}
-      .hero-copy{text-align:center}
-      .micro{justify-content:center}
-      .grid-3{grid-template-columns:1fr}
-      .grid-2{grid-template-columns:1fr}
+      .grid-3,.grid-2{grid-template-columns:1fr}
+      html,body{font-size:1.05rem}
     }
   </style>
 </head>
@@ -78,61 +78,51 @@
 
   <!-- HERO -->
   <header class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <div class="eyebrow">Law, Unfiltered</div>
-        <h1>How to <span style="color:var(--gold)">Win in Court</span> Without a Lawyer</h1>
-        <p>Courtroom procedure for everyday people. Learn the rules lawyers and even some judges overlook—filings, deadlines, objections, and evidence—so your facts actually count.</p>
-        <div class="micro">
-          <div class="chip">Avoid dismissal errors</div>
-          <div class="chip">Serve & file correctly</div>
-          <div class="chip">Make evidence admissible</div>
-        </div>
-        <p><a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">Start Learning Now →</a></p>
-        <p class="note">Rights you can’t enforce… ain’t rights.</p>
+    <img class="brand" src="images/oddlaw-hero.png" alt="Mr. Oddlaw felt puppet legal educator holding briefcase with scales emblem" />
+    <div class="wrap">
+      <div class="eyebrow">Law, Unfiltered</div>
+      <h1>How to <span style="color:var(--gold)">Win in Court</span> Without a Lawyer</h1>
+      <p>Courtroom procedure for everyday people. Learn the rules lawyers and even some judges overlook — filings, deadlines, objections, and evidence — so your facts actually count.</p>
+      <div class="micro">
+        <div class="chip">Avoid dismissal errors</div>
+        <div class="chip">Serve & file correctly</div>
+        <div class="chip">Make evidence admissible</div>
       </div>
-      <div class="hero-figure">
-        <img src="images/oddlaw-hero.png" alt="Mr. Oddlaw felt puppet legal educator holding briefcase with scales emblem" />
-      </div>
+      <p><a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">Start Learning Now →</a></p>
+      <p class="note">Rights you can’t enforce … ain’t rights.</p>
     </div>
   </header>
 
-  <!-- STORY / EMPATHY -->
+  <!-- STORY -->
   <section class="section">
     <div class="wrap grid-2">
       <div>
         <h2>The System Wasn’t Broken — It Was Built This Way.</h2>
-        <p>People don’t lose in court because they’re bad or wrong—they lose because the courtroom runs on <strong>procedure</strong>, not emotion. Endless delays, adjournments, and hidden rules wear people down until they give up.</p>
+        <p>People don’t lose in court because they’re bad or wrong — they lose because the courtroom runs on <strong>procedure</strong>, not emotion. Endless delays, adjournments, and hidden rules wear people down until they give up.</p>
         <div class="callout"><p><em>“Ignorance isn’t just dangerous — it’s fatal.”</em> If you’ve ever felt the game is rigged, you’re not alone. The good news? Procedure is teachable.</p></div>
       </div>
       <div class="stripe">
         <h3>What People Say</h3>
-        <ul>
-          <li>“The process itself feels like punishment.”</li>
-          <li>“I spent years and still didn’t get justice.”</li>
-          <li>“Smart lawyers know how to win — or how to make you lose.”</li>
-        </ul>
+        <p>“The process itself feels like punishment.”<br>“I spent years and still didn’t get justice.”<br>“Smart lawyers know how to win — or how to make you lose.”</p>
         <p>Now you can learn the same rules they hide behind.</p>
       </div>
     </div>
   </section>
 
-  <!-- HIDDEN CURRICULUM -->
+  <!-- CURRICULUM -->
   <section class="section">
     <div class="wrap grid-2">
       <div>
         <h2>The Courtroom’s Hidden Curriculum</h2>
-        <p>The courtroom doesn’t reward passion—it rewards <strong>precision</strong>. Dr. Frederick Graves spent decades in real trials refining what actually wins. His course teaches proven techniques many lawyers and even some judges don’t know — in plain English you can use today.</p>
+        <p>The courtroom doesn’t reward passion — it rewards <strong>precision</strong>. This step-by-step course teaches proven techniques many lawyers and even some judges don’t know — in plain English you can use today.</p>
       </div>
       <div class="stripe">
         <h3>Myth vs Reality</h3>
-        <ul>
-          <li><strong>Myth:</strong> Justice depends on truth.</li>
-          <li><strong>Reality:</strong> Outcomes depend on process.</li>
-          <li><strong>Myth:</strong> You need a law degree.</li>
-          <li><strong>Reality:</strong> You need rules + steps + checklists.</li>
-        </ul>
-        <p style="margin-top:10px"><a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">See the Program →</a></p>
+        <p><strong>Myth:</strong> Justice depends on truth.<br>
+           <strong>Reality:</strong> Outcomes depend on process.<br>
+           <strong>Myth:</strong> You need a law degree.<br>
+           <strong>Reality:</strong> You need rules + steps + checklists.</p>
+        <p><a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">See the Program →</a></p>
       </div>
     </div>
   </section>
@@ -141,17 +131,14 @@
   <section class="section">
     <div class="wrap">
       <h2>What You’ll Learn (Plain English. Courtroom Real.)</h2>
-      <div class="grid-3" style="margin-top:16px">
+      <div class="grid-3" style="margin-top:20px">
         <div class="stripe"><h3>File & Serve Correctly</h3><p>Step-by-step guidance so your case isn’t tossed on a technicality.</p></div>
         <div class="stripe"><h3>Evidence That Counts</h3><p>Prepare and introduce proof that’s admissible and credible.</p></div>
         <div class="stripe"><h3>Motion & Hearing Basics</h3><p>Timing, structure, and delivery — know what to say and when.</p></div>
       </div>
-      <div class="grid-3" style="margin-top:16px">
-        <div class="stripe"><h3>Templates & Checklists</h3><p>Reduce guesswork with ready-to-adapt frameworks.</p></div>
-        <div class="stripe"><h3>Confidence in the Room</h3><p>Understand what judges expect and stay composed.</p></div>
-        <div class="stripe"><h3>Decades of Technique</h3><p>Procedural tactics distilled from years in court — the details most people never learn.</p></div>
-      </div>
-      <p style="margin-top:22px"><a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">Start Learning Now →</a></p>
+      <p style="margin-top:26px;text-align:center">
+        <a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">Start Learning Now →</a>
+      </p>
     </div>
   </section>
 
@@ -159,7 +146,7 @@
   <section class="section">
     <div class="wrap">
       <h2>From Frustration to Clarity</h2>
-      <div class="grid-3" style="margin-top:16px">
+      <div class="grid-3" style="margin-top:20px">
         <div class="testi"><p>“After years of confusion, I finally understood why I kept losing — and how to fix it.”</p><p style="color:#bdbdbd">— Course Graduate</p></div>
         <div class="testi"><p>“Used the checklist to file the right way. The judge thanked me for being prepared.”</p><p style="color:#bdbdbd">— Self-Represented Litigant</p></div>
         <div class="testi"><p>“I wish I’d taken this before court — it would have saved months of pain.”</p><p style="color:#bdbdbd">— Parent in Family Court</p></div>
@@ -172,29 +159,25 @@
     <div class="wrap grid-2">
       <div>
         <h2>Our Hope for You</h2>
-        <p>That you gain calm confidence from knowing the rules and seeing that law can work for you when you understand it.</p>
-        <p>It’s not about arguing harder — it’s about acting correctly.</p>
+        <p>That you gain calm confidence from knowing the rules and seeing that law can work for you when you understand it. It’s not about arguing harder — it’s about acting correctly.</p>
       </div>
       <div class="stripe">
         <h3>Who This Is For</h3>
-        <ul><li>Tenants, consumers, small-claims, family matters.</li><li>People priced out of representation — or burned by it.</li><li>Anyone determined to never lose on a technicality again.</li></ul>
+        <p>Tenants, consumers, small-claims, family matters. <br>
+           People priced out of representation — or burned by it. <br>
+           Anyone determined to never lose on a technicality again.</p>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="section" id="faq">
-    <div class="wrap">
-      <h2>FAQ</h2>
-      <dl class="faq">
-        <dt>Is this legal advice?</dt>
-        <dd>No. This is an educational affiliate page for a self-help courtroom education program. For legal advice, consult a licensed attorney.</dd>
-        <dt>How fast can I learn?</dt>
-        <dd>Modules are bite-size. Most people get oriented in a weekend and revisit as their case progresses.</dd>
-        <dt>Will this help if I already filed?</dt>
-        <dd>Yes — procedure knowledge helps at every stage: filing, motions, discovery, hearings.</dd>
-      </dl>
-      <p style="margin-top:18px"><a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">Begin the Course →</a></p>
+  <!-- TWITTER SHARE BOX -->
+  <section class="section" style="text-align:center">
+    <div class="wrap stripe">
+      <h2>Share the Message</h2>
+      <p>If this page helped you, spread the word so more people learn their power in court.</p>
+      <p>
+        <a class="btn" style="background:#1DA1F2" href="https://twitter.com/intent/tweet?text=Learn%20how%20to%20win%20in%20court%20without%20a%20lawyer%20%E2%80%94%20real%20procedure%20for%20real%20people.%20https%3A%2F%2Flearnwithoddlaw.com" target="_blank" rel="noopener">Tweet This →</a>
+      </p>
     </div>
   </section>
 
@@ -203,16 +186,16 @@
     <div class="wrap" style="text-align:center">
       <h2>Don’t wait for the system to care — learn how to make it listen.</h2>
       <p>For decades this knowledge stayed locked inside courtrooms. Today, it’s yours.</p>
-      <p style="margin-top:12px"><a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">Learn With Mr. Oddlaw →</a></p>
-      <p class="note">Mr. Oddlaw says: Learn the rules… or get legally fooled.</p>
+      <p style="margin-top:16px"><a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">Learn With Mr. Oddlaw →</a></p>
+      <p class="note">Mr. Oddlaw says: Learn the rules … or get legally fooled.</p>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
     <div class="wrap">
+      <p>© 2025 Tanya Lawson · Mr. Oddlaw — Law, Unfiltered.</p>
       <p class="disclosure"><strong>Affiliate Disclosure:</strong> This site is an independent educational affiliate for the <em>How to Win in Court</em> program by Dr. Frederick Graves. If you purchase through this link (<code>refercode=LT0031</code>), Tanya Lawson — creator of Mr. Oddlaw — may receive a commission at no additional cost to you. This is not legal advice or representation.</p>
-      <p style="margin-top:10px">© 2025 Tanya Lawson · Mr. Oddlaw — Law, Unfiltered.</p>
     </div>
   </footer>
 
@@ -223,7 +206,9 @@
       l=d.createElement(e);l.async=1;l.src=u;
       n=d.getElementsByTagName(e)[0];n.parentNode.insertBefore(l,n);
     })(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '1860090'); /* MailerLite account ID */
+    ml('account','1860090');
+    // Optional debug log to confirm loading
+    window.addEventListener('load',()=>console.log('MailerLite script loaded'));
   </script>
   <!-- END MAILERLITE UNIVERSAL POPUP SCRIPT -->
 
