@@ -283,31 +283,51 @@
   </section>
 
   <!-- SHARE -->
-  <section class="section" style="text-align:center">
-    <div class="wrap stripe">
-      <h2>Share This Message</h2>
-      <p>If this page helped you, spread the word so more people learn their power in court. You can share directly or copy this site link to post anywhere.</p>
-      <div class="share-links">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://learnwithoddlaw.com" target="_blank">Share on Facebook</a>
-        <a href="https://www.instagram.com/" target="_blank">Share on Instagram</a>
-        <a href="https://www.tiktok.com/" target="_blank">Share on TikTok</a>
-        <a href="https://twitter.com/intent/tweet?text=Learn%20how%20to%20win%20in%20court%20without%20a%20lawyer%20%E2%80%94%20https%3A%2F%2Flearnwithoddlaw.com" target="_blank">Share on X / Twitter</a>
-        <a href="https://www.youtube.com/" target="_blank">Share on YouTube</a>
-      </div>
-      <button class="btn" id="copyBtn" style="background:#444;margin-top:20px">Copy Site Link</button>
-      <p id="copyMsg" style="color:var(--gold);font-size:1rem;margin-top:10px;display:none;">Link copied!</p>
-    </div>
-  </section>
+<section class="section" style="text-align:center">
+  <div class="wrap stripe">
+    <h2>Share This Message</h2>
+    <p>If this page helped you, spread the word so more people learn their power in court. Click your favorite platform below to share:</p>
 
-  <!-- FINAL CTA -->
-  <section class="section">
-    <div class="wrap" style="text-align:center">
-      <h2>Don’t wait for the system to care<br><span style="font-size:1.9rem;color:var(--text);display:block;margin-top:6px;">(learn how to make it listen.)</span></h2>
-      <p>For decades this knowledge stayed locked inside courtrooms. Today, it’s yours. The earlier you start learning, the stronger you’ll be when it matters.</p>
-      <p style="margin-top:16px"><a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">Learn With Mr. Oddlaw →</a></p>
-      <p class="note">Mr. Oddlaw says: Learn the rules… or get legally fooled.</p>
+    <div class="share-icons" style="display:flex;justify-content:center;flex-wrap:wrap;gap:20px;margin-top:24px;">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://learnwithoddlaw.com" target="_blank" rel="noopener">
+        <img src="images/facebook icon.png" alt="Share on Facebook" style="width:52px;height:52px;filter:brightness(1);transition:filter .3s,transform .3s;">
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+        <img src="images/instagram icon.png" alt="Share on Instagram" style="width:52px;height:52px;filter:brightness(1);transition:filter .3s,transform .3s;">
+      </a>
+
+      <!-- X (Twitter) -->
+      <a href="https://twitter.com/intent/tweet?text=Learn%20how%20to%20win%20in%20court%20without%20a%20lawyer%20%E2%80%94%20https%3A%2F%2Flearnwithoddlaw.com" target="_blank" rel="noopener">
+        <img src="images/x icon.png" alt="Share on X (Twitter)" style="width:52px;height:52px;filter:brightness(1);transition:filter .3s,transform .3s;">
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://learnwithoddlaw.com" target="_blank" rel="noopener">
+        <img src="images/linkedin icon.png" alt="Share on LinkedIn" style="width:52px;height:52px;filter:brightness(1);transition:filter .3s,transform .3s;">
+      </a>
+
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/" target="_blank" rel="noopener">
+        <img src="images/tiktok icon.png" alt="Share on TikTok" style="width:52px;height:52px;filter:brightness(1);transition:filter .3s,transform .3s;">
+      </a>
     </div>
-  </section>
+
+    <script>
+      // Add hover brightness and scale effect
+      document.querySelectorAll('.share-icons img').forEach(img=>{
+        img.addEventListener('mouseover',()=>img.style.filter='brightness(1.4)');
+        img.addEventListener('mouseout',()=>img.style.filter='brightness(1)');
+      });
+    </script>
+
+    <p style="margin-top:20px;font-size:1rem;color:#ccc;">Or copy this link to share manually:</p>
+    <button class="btn" id="copyBtn" style="background:#444;margin-top:10px">Copy Site Link</button>
+    <p id="copyMsg" style="color:var(--gold);font-size:1rem;margin-top:10px;display:none;">Link copied!</p>
+  </div>
+</section>
 
   <!-- FOOTER -->
   <footer>
