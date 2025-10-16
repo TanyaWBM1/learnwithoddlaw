@@ -62,29 +62,22 @@
     }
     .micro{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin:20px 0 30px}
     .micro .chip{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:10px 14px;border-radius:999px;font-size:.95rem}
-    .stripe,.callout,.testi{
+    .stripe,.callout{
       background:#181818;
       border:1px solid rgba(255,255,255,.06);
       border-radius:14px;
-      padding:36px 24px;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
+      padding:24px 18px;
       text-align:center;
-      height:100%;
+    }
+    .testi{
+      background:#181818;border:1px solid rgba(255,255,255,.06);
+      border-radius:14px;padding:24px 18px;text-align:center;
     }
     .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
     .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-    .share-icons{
-      display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:20px 0
-    }
-    .share-icons a{
-      width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;
-      color:#fff;font-size:1.2rem;transition:background .3s
-    }
-    .facebook{background:#1877f2}.instagram{background:#E4405F}
-    .tiktok{background:#010101}.twitter{background:#1DA1F2}.youtube{background:#FF0000}
-    .share-icons a:hover{opacity:.85}
+    .share-links{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:14px}
+    .share-links a{color:var(--gold);font-weight:600;font-size:1.05rem;border-bottom:1px solid transparent;transition:color .3s,border .3s}
+    .share-links a:hover{color:var(--red);border-bottom:1px solid var(--red)}
     footer{padding:48px 0;color:#a8a8a8;border-top:1px solid rgba(255,255,255,.05);text-align:center}
     .disclosure{font-size:.9rem;color:#b8b8b8;margin-top:24px}
     @media (max-width:960px){
@@ -115,17 +108,18 @@
 
   <!-- STORY -->
   <section class="section">
-    <div class="wrap grid-2">
-      <div>
-        <h2>The System Wasn’t Broken — It Was Built This Way.</h2>
-        <p>People don’t lose in court because they’re bad or wrong — they lose because the courtroom runs on <strong>procedure</strong>, not emotion. Endless delays, adjournments, and hidden rules wear people down until they give up.</p>
-        <p>Even if you’re not in court today, the best time to learn is <strong>before</strong> you ever need it. Knowledge of procedure empowers you to help yourself or even guide friends, family, and community members through the maze.</p>
+    <div class="wrap">
+      <h2>The System Wasn’t Broken — It Was Built This Way.</h2>
+      <p>People don’t lose in court because they’re bad or wrong — they lose because the courtroom runs on <strong>procedure</strong>, not emotion. Endless delays, adjournments, and hidden rules wear people down until they give up.</p>
+      <p>Even if you’re not in court today, the best time to learn is <strong>before</strong> you ever need it. Knowledge of procedure empowers you to help yourself or even guide friends, family, and community members through the maze.</p>
+
+      <div class="grid-2" style="margin-top:40px">
         <div class="callout"><p><em>“Ignorance isn’t just dangerous — it’s fatal.”</em> If you’ve ever felt the game is rigged, you’re not alone. The good news? Procedure is teachable.</p></div>
-      </div>
-      <div class="stripe">
-        <h3>What People Say</h3>
-        <p>“The process itself feels like punishment.”<br>“I spent years and still didn’t get justice.”<br>“Smart lawyers know how to win — or how to make you lose.”</p>
-        <p>Now you can learn the same rules they hide behind.</p>
+        <div class="stripe">
+          <h3>What People Say</h3>
+          <p>“The process itself feels like punishment.”<br>“I spent years and still didn’t get justice.”<br>“Smart lawyers know how to win — or how to make you lose.”</p>
+          <p>Now you can learn the same rules they hide behind.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -168,15 +162,15 @@
   <section class="section" style="text-align:center">
     <div class="wrap stripe">
       <h2>Share This Message</h2>
-      <p>If this page helped you, spread the word so more people learn their power in court. Share directly or copy the link below.</p>
-      <div class="share-icons">
-        <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://learnwithoddlaw.com" target="_blank" aria-label="Facebook">f</a>
-        <a class="instagram" href="https://www.instagram.com/" target="_blank" aria-label="Instagram">📸</a>
-        <a class="tiktok" href="https://www.tiktok.com/" target="_blank" aria-label="TikTok">🎵</a>
-        <a class="twitter" href="https://twitter.com/intent/tweet?text=Learn%20how%20to%20win%20in%20court%20without%20a%20lawyer%20%E2%80%94%20https%3A%2F%2Flearnwithoddlaw.com" target="_blank" aria-label="X / Twitter">𝕏</a>
-        <a class="youtube" href="https://www.youtube.com/" target="_blank" aria-label="YouTube">▶</a>
+      <p>If this page helped you, spread the word so more people learn their power in court. You can share directly or copy this site link to post anywhere.</p>
+      <div class="share-links">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://learnwithoddlaw.com" target="_blank">Share on Facebook</a>
+        <a href="https://www.instagram.com/" target="_blank">Share on Instagram</a>
+        <a href="https://www.tiktok.com/" target="_blank">Share on TikTok</a>
+        <a href="https://twitter.com/intent/tweet?text=Learn%20how%20to%20win%20in%20court%20without%20a%20lawyer%20%E2%80%94%20https%3A%2F%2Flearnwithoddlaw.com" target="_blank">Share on X / Twitter</a>
+        <a href="https://www.youtube.com/" target="_blank">Share on YouTube</a>
       </div>
-      <button class="btn" id="copyBtn" style="background:#444;margin-top:10px">Copy Site Link</button>
+      <button class="btn" id="copyBtn" style="background:#444;margin-top:20px">Copy Site Link</button>
       <p id="copyMsg" style="color:var(--gold);font-size:1rem;margin-top:10px;display:none;">Link copied!</p>
     </div>
   </section>
