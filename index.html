@@ -74,9 +74,11 @@
       --maxw:1120px;
     }
     *{box-sizing:border-box}
-    html,body{margin:0;background:var(--bg);color:var(--text);
+    html,body{
+      margin:0;background:var(--bg);color:var(--text);
       font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      scroll-behavior:smooth;font-size:1.15rem;}
+      scroll-behavior:smooth;font-size:1.15rem;
+    }
     img{max-width:100%;display:block}
     a{color:inherit;text-decoration:none}
     .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
@@ -99,7 +101,9 @@
     .note{font-size:1.25rem;color:var(--gold);font-weight:600;margin-top:15px;}
     .micro{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin:20px 0 30px}
     .micro .chip{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
-      padding:10px 14px;border-radius:999px;font-size:.95rem}
+      padding:10px 14px;border-radius:999px;font-size:1rem}
+    .micro.gold .chip{background:rgba(212,160,23,.15);border:1px solid var(--gold);
+      color:var(--gold);font-size:1.15rem;font-weight:700;padding:14px 20px}
     .stripe,.callout,.testi{background:#181818;border:1px solid rgba(255,255,255,.06);
       border-radius:14px;padding:28px 22px;display:flex;flex-direction:column;
       justify-content:center;text-align:center;min-height:240px;}
@@ -190,7 +194,7 @@
     <div class="wrap" style="text-align:center">
       <h2>Three Easy Steps to Justice</h2>
 
-      <div class="micro" style="margin-bottom:20px">
+      <div class="micro gold" style="margin-bottom:30px">
         <div class="chip">#1 Allege the Facts</div>
         <div class="chip">#2 Prove the Facts</div>
         <div class="chip">#3 Move the Judge</div>
@@ -203,9 +207,9 @@
         <div class="stripe">
           <h3>Practical Power</h3>
           <ul style="text-align:left;line-height:1.7;margin-left:30px;margin-bottom:20px">
-            <li>Learn how to <strong>control biased judges</strong> using procedural rules that protect fairness.</li>
-            <li>Defeat <strong>crooked lawyers</strong> who rely on confusion and intimidation.</li>
             <li>Gain the <strong>Key to the Courthouse</strong> — the information and confidence to stand your ground.</li>
+            <li>Learn how to <strong>navigate court procedures and rules of evidence</strong> essential skills rarely taught, but crucial for success.</li>
+            <li>Say goodbye to <strong>crippling legal fees.</strong> Say hello to an affordable system that works for you.</li>
           </ul>
           <p>Includes lessons in <strong>text, audio, and video</strong> formats — plus over <strong>50 legal forms</strong> you can copy, customize, and submit yourself.</p>
           <p><strong>Enforce your rights</strong> with common-sense tactics anyone — even an eighth grader — can learn in a single weekend.</p>
