@@ -193,6 +193,32 @@
       .grid-3,.grid-2{grid-template-columns:1fr}
       html,body{font-size:1.08rem}
     }
+
+    /* Responsive Preview Image */
+.preview-image {
+  width: 100%;
+  max-width: 640px; /* about 70% of your hero image width */
+  margin: 0 auto 40px;
+  display: block;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  animation: fadeInPreview 1.5s ease forwards;
+}
+
+/* Smooth cinematic fade-in */
+@keyframes fadeInPreview {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .preview-image {
+    max-width: 90%;
+    margin: 0 auto 30px;
+  }
+}
   </style>
 </head>
 <body>
