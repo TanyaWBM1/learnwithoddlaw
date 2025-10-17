@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Block GitHub system files
+Disallow: /README
+Disallow: /LICENSE
+
+# Sitemap location
+Sitemap: https://learnwithoddlaw.com/sitemap.xml
