@@ -194,29 +194,49 @@
       html,body{font-size:1.08rem}
     }
 
-    /* Responsive Preview Image */
+    /* === PREVIEW IMAGE SECTION === */
+.preview-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
 .preview-image {
   width: 100%;
-  max-width: 640px; /* about 70% of your hero image width */
-  margin: 0 auto 40px;
+  max-width: 640px; /* desktop size */
+  margin: 0 auto 20px;
   display: block;
   border-radius: 14px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(212, 160, 23, 0.4); /* subtle gold accent */
   opacity: 0;
   animation: fadeInPreview 1.5s ease forwards;
 }
 
-/* Smooth cinematic fade-in */
+/* Cinematic fade-in motion */
 @keyframes fadeInPreview {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Mobile responsiveness */
+/* Caption styling */
+.preview-caption {
+  font-size: 1.05rem;
+  color: #BDBDBD; /* soft gray for tone contrast */
+  font-style: italic;
+  letter-spacing: 0.3px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Responsive behavior */
 @media (max-width: 768px) {
   .preview-image {
     max-width: 90%;
-    margin: 0 auto 30px;
+    margin: 0 auto 16px;
+  }
+  .preview-caption {
+    font-size: 1rem;
+    margin-bottom: 40px;
   }
 }
   </style>
@@ -386,11 +406,13 @@
   </section>
 
   <!-- ========== FINAL CTA ========== -->
-  <section class="section" id="final-cta">
-   <img src="images/social-preview.jpg" alt="Learn With Mr. Oddlaw social preview image"
-class="preview-image" />
-
-    <div class="wrap" style="text-align:center">
+    <section class="section" id="final-cta">
+      <div class="preview-section">
+  <img src="images/social-preview.jpg" alt="Learn With Mr. Oddlaw — Legal empowerment for everyday people"
+       class="preview-image" />
+  <p class="preview-caption">Knowledge Is Power! Learn the RULES Before You Need Them.</p>
+</div><br>
+      <div class="wrap" style="text-align:center">
       <h2>Don’t Wait For The System To Care.<br>
         <span style="font-size:1.9rem;color:var(--text);display:block;margin-top:6px;">(Learn How To Make It Listen.)<br></span>
       </h2><br>
