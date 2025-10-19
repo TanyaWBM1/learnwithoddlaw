@@ -177,6 +177,46 @@
     }
     .icon-border:hover{transform:scale(1.08);filter:brightness(1.3);box-shadow:0 0 15px rgba(212,160,23,.4)}
 
+<style>
+  /* Add this once near the top of your <head> or before </body> */
+  @keyframes goldPulse {
+    0% { box-shadow: 0 0 15px rgba(212,160,23,0.15); }
+    50% { box-shadow: 0 0 30px rgba(212,160,23,0.4); }
+    100% { box-shadow: 0 0 15px rgba(212,160,23,0.15); }
+  }
+</style>
+
+<!-- ==========================
+   GOLD PULSE BOX SECTION
+============================== -->
+<div style="
+  border:1px solid rgba(212,160,23,0.4);
+  border-radius:14px;
+  padding:25px 30px;
+  margin:45px 0;
+  background:rgba(255,255,255,0.02);
+  max-width:760px;
+  margin-left:auto;
+  margin-right:auto;
+  animation: goldPulse 4s ease-in-out infinite;
+  text-align:center;">
+
+  <p style="
+    font-size:1.25rem;
+    line-height:1.9;
+    color:#C0C0C0;
+    text-shadow:
+      0 0 10px rgba(255,255,255,0.25),
+      0 0 20px rgba(212,160,23,0.15);
+    font-weight:600;
+    margin:0;">
+    Constitutions. Rules. Statutes. Codes. Court Rulings.<br>
+    All of them have their own grammar, their own logic, their own traps.
+  </p>
+
+</div>
+
+    
     /* Footer */
     footer{
       background:#0c0c0c;border-top:2px solid var(--gold);padding:60px 0;text-align:center;
