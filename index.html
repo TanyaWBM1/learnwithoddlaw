@@ -284,6 +284,67 @@
     100% { box-shadow: 0 0 15px rgba(212,160,23,0.15); }
   }
   </style>
+
+  <!-- === UNIVERSAL GOLD PULSE (Desktop + Tablet + Mobile) === -->
+<style>
+  /* ---------- Base Keyframes ---------- */
+  @keyframes goldPulse {
+    0%   { box-shadow: 0 0 10px rgba(212,160,23,0.12), 0 0 25px rgba(212,160,23,0.05); }
+    50%  { box-shadow: 0 0 25px rgba(212,160,23,0.35), 0 0 50px rgba(212,160,23,0.15); }
+    100% { box-shadow: 0 0 10px rgba(212,160,23,0.12), 0 0 25px rgba(212,160,23,0.05); }
+  }
+
+  .gold-pulse {
+    animation: goldPulse 6s ease-in-out infinite;
+    transition: all 0.3s ease;
+  }
+
+  /* ---------- Adaptive Pulse Strength ---------- */
+  @media (max-width:1024px){ /* tablets */
+    .gold-pulse { animation-duration: 7s; }
+  }
+
+  @media (max-width:768px){ /* mobile phones */
+    .gold-pulse {
+      animation-duration: 8s;
+      box-shadow: 0 0 6px rgba(212,160,23,0.2);
+    }
+  }
+
+  /* ---------- Section Radial Background ---------- */
+  .gold-bg {
+    background: radial-gradient(1000px 600px at 50% 30%, rgba(212,160,23,0.07), #0f0f0f 80%);
+  }
+  @media (max-width:768px){
+    .gold-bg {
+      background: radial-gradient(600px 400px at 50% 20%, rgba(212,160,23,0.08), #0f0f0f 85%);
+    }
+  }
+
+  /* ---------- Button Scaling ---------- */
+  .btn {
+    display:inline-block;
+    background:#C7311E;
+    color:#fff;
+    padding:18px 36px;
+    border-radius:12px;
+    font-weight:800;
+    box-shadow:0 0 20px rgba(0,0,0,.45);
+    transition:.25s background,.25s transform;
+  }
+  .btn:hover{background:#A62616;transform:translateY(-1px)}
+  @media (max-width:768px){
+    .btn{padding:16px 28px;font-size:1rem}
+  }
+
+  /* ---------- Text Scaling ---------- */
+  @media (max-width:768px){
+    h2{font-size:clamp(1.6rem,5vw,2.2rem);}
+    h3{font-size:1.25rem;}
+    p{font-size:1rem;line-height:1.7;}
+  }
+</style>
+
 </head>
 <body>
 
