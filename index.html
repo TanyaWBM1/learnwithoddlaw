@@ -345,6 +345,23 @@
   }
 </style>
 
+<!-- === Smooth Scroll + Poll Reveal Styles (global) === -->
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  /* optional global fade for polls */
+  #poll-hero, #poll-prose, #poll-course {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all .6s ease;
+  }
+  .show-poll {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+</style>
+  
 </head>
 <body>
 
