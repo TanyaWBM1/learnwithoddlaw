@@ -551,42 +551,50 @@
 
     // === Poll logic + GA4 tracking + fade-out ===
     function voteHero(choice){
-      const results = {
-        yes: "12% said yes — brave optimists.",
-        no: "81% said no — they’ve seen the system up close.",
-        unsure: "7% said unsure — and that’s the danger zone."
-      };
-      const pollBox = document.getElementById("poll-hero");
-      const resultArea = document.getElementById("heroPollResult");
+  const results = {
+    yes: "12% said yes — brave optimists.",
+    no: "81% said no — they’ve seen the system up close.",
+    unsure: "7% said unsure — and that’s the danger zone."
+  };
+  const pollBox = document.getElementById("poll-hero");
+  const resultArea = document.getElementById("heroPollResult");
 
-      resultArea.innerHTML =
-        results[choice] +
-        " <br><br><span style='color:#D4A017;'>“Learn the rules before you need them.”</span><br>" +
-        "<a href='https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031' target='_blank' rel='noopener noreferrer' style='color:#C7311E;font-weight:700;text-decoration:none;'>🎓 Access the Real Course →</a>";
+  // Display result + thank you message
+  resultArea.innerHTML =
+    results[choice] +
+    "<br><br><span style='color:#D4A017;'>Mr. Oddlaw says:</span> “Learn the rules before you need them.”<br>" +
+    "<a href='https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031' target='_blank' rel='noopener noreferrer' style='color:#C7311E;font-weight:700;text-decoration:none;'>🎓 Access the Real Course →</a>" +
+    "<br><br><span style='color:#4CA6A8;opacity:0;transition:opacity 1s ease;' id='heroThankYou'>Thank you for voting.</span>";
 
-      // --- Google Analytics 4 Event Tracking ---
-      if (typeof gtag === 'function'){
-        gtag('event','poll_response',{
-          event_category:'Poll',
-          event_label:'Hero Fairness Poll',
-          poll_choice:choice
-        });
+  // Fade in the thank-you message after 1 second
+  setTimeout(()=>{
+    const ty = document.getElementById('heroThankYou');
+    if(ty) ty.style.opacity = 1;
+  },1000);
+
+  // Track event in Google Analytics
+  if (typeof gtag === 'function'){
+    gtag('event','poll_response',{
+      event_category:'Poll',
+      event_label:'Hero Fairness Poll',
+      poll_choice:choice
+    });
+  }
+
+  // Smooth fade-out after 10 seconds + auto-scroll to Pro Se Problem
+  setTimeout(()=>{
+    pollBox.style.transition = "opacity 1s ease, transform 1s ease";
+    pollBox.style.opacity = "0";
+    pollBox.style.transform = "translateY(25px)";
+    setTimeout(()=>{
+      pollBox.style.display = "none";
+      const next = document.getElementById('prose-problem');
+      if(next){
+        next.scrollIntoView({behavior:'smooth', block:'start'});
       }
-
-      // --- Smooth fade-out after 5 seconds + auto-scroll to Pro Se Problem ---
-      setTimeout(()=>{
-        pollBox.style.transition = "opacity 0.8s ease, transform 0.8s ease";
-        pollBox.style.opacity = "0";
-        pollBox.style.transform = "translateY(20px)";
-        setTimeout(()=>{
-          pollBox.style.display = "none";
-          const next = document.getElementById('prose-problem');
-          if(next){
-            next.scrollIntoView({behavior:'smooth', block:'start'});
-          }
-        },800);
-      },5000);
-    }
+    },1000);
+  },10000);
+}
   </script>
 </section>
 
@@ -708,43 +716,52 @@
 
     // === Poll logic + GA4 tracking + fade-out ===
     function voteCourt(choice){
-      const responses = {
-        paperwork: "Most people fear the paperwork — and that’s exactly how the system wins.",
-        judge: "The judge? Understandable fear. But once you know the rules, the robe loses its power.",
-        speak: "Saying the wrong thing scares everyone — until you learn the 3-step formula.",
-        lose: "Losing everything isn’t inevitable — it’s preventable with procedure."
-      };
-      const pollBox = document.getElementById("poll-prose");
-      const resultArea = document.getElementById("courtPollResult");
+  const responses = {
+    paperwork: "Most people fear the paperwork — and that’s exactly how the system wins.",
+    judge: "The judge? Understandable fear. But once you know the rules, the robe loses its power.",
+    speak: "Saying the wrong thing scares everyone — until you learn the 3-step formula.",
+    lose: "Losing everything isn’t inevitable — it’s preventable with procedure."
+  };
+  const pollBox = document.getElementById("poll-prose");
+  const resultArea = document.getElementById("courtPollResult");
 
-      resultArea.innerHTML =
-        responses[choice] +
-        "<br><br><span style='color:#D4A017;'>Mr. Oddlaw says:</span> ‘Fear fades when you learn the rules.’<br>" +
-        "<a href='https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031' target='_blank' style='color:#C7311E;font-weight:700;text-decoration:none;'>🎓 Access the Real Course →</a>";
+  // Display result + thank you message
+  resultArea.innerHTML =
+    responses[choice] +
+    "<br><br><span style='color:#D4A017;'>Mr. Oddlaw says:</span> ‘Fear fades when you learn the rules.’<br>" +
+    "<a href='https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031' target='_blank' style='color:#C7311E;font-weight:700;text-decoration:none;'>🎓 Access the Real Course →</a>" +
+    "<br><br><span style='color:#4CA6A8;opacity:0;transition:opacity 1s ease;' id='courtThankYou'>Thank you for voting.</span>";
 
-      if (typeof gtag === 'function'){
-        gtag('event','poll_response',{
-          event_category:'Poll',
-          event_label:'Pro Se Fear Poll',
-          poll_choice:choice
-        });
+  // Fade in the thank-you message after 1 second
+  setTimeout(()=>{
+    const ty = document.getElementById('courtThankYou');
+    if(ty) ty.style.opacity = 1;
+  },1000);
+
+  // GA4 tracking
+  if (typeof gtag === 'function'){
+    gtag('event','poll_response',{
+      event_category:'Poll',
+      event_label:'Pro Se Fear Poll',
+      poll_choice:choice
+    });
+  }
+
+  // Smooth fade-out after 10 seconds + auto-scroll to Coming Up
+  setTimeout(()=>{
+    pollBox.style.transition = "opacity 1s ease, transform 1s ease";
+    pollBox.style.opacity = "0";
+    pollBox.style.transform = "translateY(25px)";
+    setTimeout(()=>{
+      pollBox.style.display = "none";
+      const next = document.getElementById('coming-up');
+      if(next){
+        next.scrollIntoView({behavior:'smooth', block:'start'});
       }
-
-      // --- Smooth fade-out after 5 seconds + auto-scroll to Coming Up section ---
-      setTimeout(()=>{
-        pollBox.style.transition = "opacity 0.8s ease, transform 0.8s ease";
-        pollBox.style.opacity = "0";
-        pollBox.style.transform = "translateY(20px)";
-        setTimeout(()=>{
-          const next = document.getElementById('coming-up');
-          if(next){
-            next.scrollIntoView({behavior:'smooth', block:'start'});
-          }
-          pollBox.style.display = "none";
-        },800);
-      },5000);
-    }
-  </script>
+    },1000);
+  },10000);
+}
+</script>
 </section>
 
   
