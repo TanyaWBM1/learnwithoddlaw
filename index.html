@@ -534,17 +534,21 @@
 
   <script>
     // === Reveal when user scrolls to Pro Se Problem section ===
-    window.addEventListener('scroll', function(){
-      const trigger = document.getElementById('prose-problem');
-      const poll = document.getElementById('poll-hero');
-      if(!trigger || !poll) return;
-      const rect = trigger.getBoundingClientRect();
-      if(rect.top < window.innerHeight * 0.8){
-        poll.style.display = 'block';
-        poll.style.opacity = '1';
-        poll.style.transform = 'translateY(0)';
-      }
-    });
+   let heroPollShown = false;
+
+window.addEventListener('scroll', function(){
+  if(heroPollShown) return; // prevent multiple triggers
+  const trigger = document.getElementById('prose-problem');
+  const poll = document.getElementById('poll-hero');
+  if(!trigger || !poll) return;
+  const rect = trigger.getBoundingClientRect();
+  if(rect.top < window.innerHeight * 0.8){
+    poll.style.display = 'block';
+    poll.style.opacity = '1';
+    poll.style.transform = 'translateY(0)';
+    heroPollShown = true;
+  }
+});
 
     // === Poll logic + GA4 tracking + fade-out ===
     function voteHero(choice){
