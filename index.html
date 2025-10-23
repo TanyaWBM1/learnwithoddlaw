@@ -640,17 +640,9 @@
 <!-- =========================
  POLL #2 — “What Scares You Most About Going to Court?”
 ========================= -->
-<section id="poll-prose"
-  style="text-align:center;margin-top:-25px;margin-bottom:40px;opacity:0;transform:translateY(40px);
-         transition:all .6s ease;">
-  <div style="border:1px solid rgba(212,160,23,0.5);border-radius:14px;
-              padding:32px 22px;max-width:680px;margin:15px auto 35px;
-              background:rgba(255,255,255,0.02);
-              box-shadow:0 0 25px rgba(212,160,23,0.18);
-              animation:goldPulse 6s ease-in-out infinite;">
-    <h3 style="color:#D4A017;font-size:1.45rem;line-height:1.4;margin-bottom:18px;">
-      What scares you most about going to court?
-    </h3>
+<section id="poll-prose" style="opacity:0;transform:translateY(40px);transition:all .6s ease;">
+  <div class="poll-box">
+    <h3 class="poll-heading">What scares you most about going to court?</h3>
 
     <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
       <button class="poll2-btn" onclick="voteCourt('paperwork')">📄 The Paperwork</button>
@@ -658,6 +650,11 @@
       <button class="poll2-btn" onclick="voteCourt('speak')">🗣️ Saying the Wrong Thing</button>
       <button class="poll2-btn" onclick="voteCourt('lose')">💸 Losing Everything</button>
     </div>
+
+    <p class="poll-result" id="courtPollResult"></p>
+  </div>
+  <!-- keep your same JS logic below -->
+</section>
 
     <p id="courtPollResult"
        style="margin-top:26px;color:#4CA6A8;font-weight:600;
