@@ -844,7 +844,7 @@
 </script>
 <!-- End MailerLite Universal -->
 
-<!-- === STICKY CTA BUTTON (Slide-In + Pulse, Scroll-Activated, Fade-Out Near Bottom) === -->
+<!-- === STICKY CTA BUTTON (Slide-In + Pulse, Fades Out Before 'Before You Make Up Your Mind') === -->
 <div id="sticky-cta" class="gold-pulse"
      style="position:fixed;
             right:18px;
@@ -892,30 +892,43 @@
 </style>
 
 <script>
-  // === STICKY CTA: SLIDE IN + PULSE ON SCROLL ===
-  window.addEventListener('scroll', () => {
+  // === SLIDE-IN + HEARTBEAT + FADE OUT WHEN 'Before You Make Up Your Mind' ENTERS ===
+  const cta = document.getElementById('sticky-cta');
+  const targetSection = document.querySelector("h3:contains('Before You Make Up Your Mind')");
+
+  function handleScroll() {
     const scrollY = window.scrollY;
     const docHeight = document.body.scrollHeight;
     const winHeight = window.innerHeight;
     const halfway = (docHeight - winHeight) / 2;
-    const fadeOutPoint = docHeight - winHeight * 1.5;
-    const cta = document.getElementById('sticky-cta');
+    let fadeOutAt = Infinity;
 
-    if (scrollY > halfway && scrollY < fadeOutPoint) {
+    // If the "Before You Make Up Your Mind" section exists, set fade-out trigger
+    const target = document.querySelector("h3") 
+      ? Array.from(document.querySelectorAll("h3")).find(h3 =>
+          h3.textContent.includes("Before You Make Up Your Mind")
+        )
+      : null;
+    if (target) fadeOutAt = target.getBoundingClientRect().top + window.scrollY - winHeight / 2;
+
+    if (scrollY > halfway && scrollY < fadeOutAt) {
       // Slide + Fade IN
       cta.style.opacity = '1';
       cta.style.pointerEvents = 'auto';
       cta.style.transform = 'translate(0, 0)';
-      cta.classList.add('pulse-active'); // activate pulse
+      cta.classList.add('pulse-active');
     } else {
       // Slide + Fade OUT
       cta.style.opacity = '0';
       cta.style.pointerEvents = 'none';
       cta.style.transform = 'translate(40px, 10px)';
-      cta.classList.remove('pulse-active'); // stop pulse
+      cta.classList.remove('pulse-active');
     }
-  });
+  }
+
+  window.addEventListener('scroll', handleScroll);
 </script>
+
 
 <!-- SEO Verified: Mr. Oddlaw - Legal Tips & Pro Se Court Help | Updated: 2025-10-17 -->        
 </body>
