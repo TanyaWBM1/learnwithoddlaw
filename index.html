@@ -844,52 +844,79 @@
 </script>
 <!-- End MailerLite Universal -->
 
-<!-- SEO Verified: Mr. Oddlaw - Legal Tips & Pro Se Court Help | Updated: 2025-10-17 -->
-
-<!-- === STICKY CTA BUTTON === -->
-<div id="sticky-cta"
-      style="position:fixed;bottom:18px;right:18px;z-index:9999;
-            background:#C7311E;padding:12px 18px;border-radius:10px;
+<!-- === STICKY CTA BUTTON (Slide-In + Pulse, Scroll-Activated, Fade-Out Near Bottom) === -->
+<div id="sticky-cta" class="gold-pulse"
+     style="position:fixed;
+            right:18px;
+            bottom:calc(18px + env(safe-area-inset-bottom));
+            z-index:999999;
+            background:#C7311E;
+            padding:12px 18px;
+            border-radius:10px;
             box-shadow:0 0 14px rgba(0,0,0,.5);
-            transition:all .3s ease;">
+            opacity:0;
+            pointer-events:none;
+            transform:translate(40px,10px);
+            transition:opacity .6s ease, transform .6s ease, filter .5s ease;">
   <a href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031"
      target="_blank" rel="nofollow noopener"
-     style="color:#fff;font-weight:800;font-size:1rem;text-decoration:none;">
+     style="color:#fff;font-weight:800;font-size:1rem;text-decoration:none;display:block;">
      ⚖️ Learn to Win in Court
   </a>
 </div>
 
 <style>
-  /* === MOBILE ADJUSTMENTS === */
+  /* === RESPONSIVE TWEAKS === */
+  @media (max-width:1024px){
+    #sticky-cta{ right:14px; bottom:calc(14px + env(safe-area-inset-bottom)); padding:11px 16px; }
+  }
   @media (max-width:768px){
-    #sticky-cta{
-      bottom:12px;
-      right:12px;
-      padding:10px 14px;
-      border-radius:8px;
-    }
-    #sticky-cta a{
-      font-size:0.9rem;
-    }
+    #sticky-cta{ right:12px; bottom:calc(12px + env(safe-area-inset-bottom)); padding:10px 14px; border-radius:8px; }
+    #sticky-cta a{ font-size:.95rem; }
+  }
+  @media (hover:hover){
+    #sticky-cta:hover{ background:#A62616; transform:translate(0, -1px) scale(1.04); }
   }
 
-  /* === TABLET ADJUSTMENTS === */
-  @media (min-width:769px) and (max-width:1024px){
-    #sticky-cta{
-      bottom:14px;
-      right:14px;
-      padding:11px 16px;
-      border-radius:9px;
-    }
+  /* === HEARTBEAT PULSE ANIMATION === */
+  @keyframes heartbeatPulse {
+    0%   { filter: brightness(1); box-shadow:0 0 14px rgba(212,160,23,0.3); }
+    25%  { filter: brightness(1.1); box-shadow:0 0 25px rgba(212,160,23,0.4); }
+    50%  { filter: brightness(1.25); box-shadow:0 0 30px rgba(212,160,23,0.55); }
+    75%  { filter: brightness(1.1); box-shadow:0 0 22px rgba(212,160,23,0.4); }
+    100% { filter: brightness(1); box-shadow:0 0 14px rgba(212,160,23,0.3); }
   }
-
-  /* === HOVER EFFECT === */
-  #sticky-cta:hover{
-    background:#A62616;
-    transform:scale(1.04);
+  .pulse-active {
+    animation: heartbeatPulse 3.5s ease-in-out infinite;
   }
 </style>
-<div id="sticky-cta" class="gold-pulse" style="position:fixed; ...">
-        
+
+<script>
+  // === STICKY CTA: SLIDE IN + PULSE ON SCROLL ===
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const docHeight = document.body.scrollHeight;
+    const winHeight = window.innerHeight;
+    const halfway = (docHeight - winHeight) / 2;
+    const fadeOutPoint = docHeight - winHeight * 1.5;
+    const cta = document.getElementById('sticky-cta');
+
+    if (scrollY > halfway && scrollY < fadeOutPoint) {
+      // Slide + Fade IN
+      cta.style.opacity = '1';
+      cta.style.pointerEvents = 'auto';
+      cta.style.transform = 'translate(0, 0)';
+      cta.classList.add('pulse-active'); // activate pulse
+    } else {
+      // Slide + Fade OUT
+      cta.style.opacity = '0';
+      cta.style.pointerEvents = 'none';
+      cta.style.transform = 'translate(40px, 10px)';
+      cta.classList.remove('pulse-active'); // stop pulse
+    }
+  });
+</script>
+
+<!-- SEO Verified: Mr. Oddlaw - Legal Tips & Pro Se Court Help | Updated: 2025-10-17 -->        
 </body>
 </html>
