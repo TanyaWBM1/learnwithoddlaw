@@ -500,24 +500,19 @@
  POLL #1 — “Do You Think the Legal System Is Fair?”
  (Appears when user scrolls to Pro Se Problem)
 ========================= -->
-<section id="poll-hero"
-  style="text-align:center;display:none;opacity:0;transform:translateY(40px);
-         transition:all .6s ease;margin-top:-25px;margin-bottom:40px;">
-  <div style="border:1px solid rgba(212,160,23,0.5);border-radius:14px;
-              padding:28px 18px;max-width:600px;margin:15px auto 35px;
-              background:rgba(255,255,255,0.02);
-              box-shadow:0 0 25px rgba(212,160,23,0.15);
-              animation:goldPulse 6s ease-in-out infinite;">
-    <h3 style="color:#D4A017;margin-bottom:12px;font-size:1.25rem;">
-      Do you think the legal system is fair?
-    </h3>
+<section id="poll-hero" style="display:none;opacity:0;transform:translateY(40px);transition:all .6s ease;">
+  <div class="poll-box">
+    <h3 class="poll-heading">Do you think the legal system is fair?</h3>
 
-    <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;">
+    <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
       <button class="poll-btn" onclick="voteHero('yes')">Yes</button>
       <button class="poll-btn" onclick="voteHero('no')">No</button>
       <button class="poll-btn" onclick="voteHero('unsure')">Not&nbsp;Sure</button>
     </div>
 
+    <p class="poll-result" id="heroPollResult"></p>
+  </div>
+</section>
     <p id="heroPollResult"
        style="margin-top:16px;color:#4CA6A8;font-weight:600;font-size:1.05rem;"></p>
   </div>
