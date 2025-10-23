@@ -844,7 +844,7 @@
 </script>
 <!-- End MailerLite Universal -->
 
-<!-- === STICKY CTA BUTTON (Slide-In + Pulse, Fades Out Before 'Before You Make Up Your Mind') === -->
+<!-- === STICKY CTA BUTTON (Slide-In + Pulse + Whoosh, Fades Before 'Before You Make Up Your Mind') === -->
 <div id="sticky-cta" class="gold-pulse"
      style="position:fixed;
             right:18px;
@@ -865,6 +865,12 @@
   </a>
 </div>
 
+<!-- === WHOOSH SOUND (auto-plays only when CTA appears) === -->
+<audio id="ctaWhoosh" preload="auto">
+  <source src="https://cdn.jsdelivr.net/gh/TanyaLawsonAssets/audio/whoosh-soft.mp3" type="audio/mpeg">
+  <source src="https://cdn.jsdelivr.net/gh/TanyaLawsonAssets/audio/whoosh-soft.ogg" type="audio/ogg">
+</audio>
+
 <style>
   /* === RESPONSIVE TWEAKS === */
   @media (max-width:1024px){
@@ -875,58 +881,61 @@
     #sticky-cta a{ font-size:.95rem; }
   }
   @media (hover:hover){
-    #sticky-cta:hover{ background:#A62616; transform:translate(0, -1px) scale(1.04); }
+    #sticky-cta:hover{ background:#A62616; transform:translate(0,-1px) scale(1.04); }
   }
 
-  /* === HEARTBEAT PULSE ANIMATION === */
+  /* === HEARTBEAT PULSE === */
   @keyframes heartbeatPulse {
-    0%   { filter: brightness(1); box-shadow:0 0 14px rgba(212,160,23,0.3); }
-    25%  { filter: brightness(1.1); box-shadow:0 0 25px rgba(212,160,23,0.4); }
-    50%  { filter: brightness(1.25); box-shadow:0 0 30px rgba(212,160,23,0.55); }
-    75%  { filter: brightness(1.1); box-shadow:0 0 22px rgba(212,160,23,0.4); }
-    100% { filter: brightness(1); box-shadow:0 0 14px rgba(212,160,23,0.3); }
+    0%   { filter:brightness(1);box-shadow:0 0 14px rgba(212,160,23,0.3);}
+    25%  { filter:brightness(1.1);box-shadow:0 0 25px rgba(212,160,23,0.4);}
+    50%  { filter:brightness(1.25);box-shadow:0 0 30px rgba(212,160,23,0.55);}
+    75%  { filter:brightness(1.1);box-shadow:0 0 22px rgba(212,160,23,0.4);}
+    100% { filter:brightness(1);box-shadow:0 0 14px rgba(212,160,23,0.3);}
   }
-  .pulse-active {
-    animation: heartbeatPulse 3.5s ease-in-out infinite;
-  }
+  .pulse-active{animation:heartbeatPulse 3.5s ease-in-out infinite;}
 </style>
 
 <script>
-  // === SLIDE-IN + HEARTBEAT + FADE OUT WHEN 'Before You Make Up Your Mind' ENTERS ===
+  // === SLIDE-IN + HEARTBEAT + FADE OUT WHEN TARGET ENTERS + WHOOSH SOUND ===
   const cta = document.getElementById('sticky-cta');
-  const targetSection = document.querySelector("h3:contains('Before You Make Up Your Mind')");
+  const whoosh = document.getElementById('ctaWhoosh');
+  let ctaVisible = false;
 
-  function handleScroll() {
+  window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
     const docHeight = document.body.scrollHeight;
     const winHeight = window.innerHeight;
     const halfway = (docHeight - winHeight) / 2;
-    let fadeOutAt = Infinity;
 
-    // If the "Before You Make Up Your Mind" section exists, set fade-out trigger
-    const target = document.querySelector("h3") 
-      ? Array.from(document.querySelectorAll("h3")).find(h3 =>
-          h3.textContent.includes("Before You Make Up Your Mind")
-        )
-      : null;
-    if (target) fadeOutAt = target.getBoundingClientRect().top + window.scrollY - winHeight / 2;
+    // find "Before You Make Up Your Mind" headline
+    const target = Array.from(document.querySelectorAll("h3"))
+      .find(h3 => h3.textContent.includes("Before You Make Up Your Mind"));
+    const fadeOutAt = target
+      ? target.getBoundingClientRect().top + window.scrollY - winHeight / 2
+      : Infinity;
 
     if (scrollY > halfway && scrollY < fadeOutAt) {
-      // Slide + Fade IN
+      if (!ctaVisible) {
+        // play sound once when CTA first appears
+        if (whoosh && typeof whoosh.play === "function") {
+          whoosh.currentTime = 0;
+          whoosh.volume = 0.35;   // soft volume
+          whoosh.play().catch(()=>{}); // ignore blocked autoplay
+        }
+        ctaVisible = true;
+      }
       cta.style.opacity = '1';
       cta.style.pointerEvents = 'auto';
-      cta.style.transform = 'translate(0, 0)';
+      cta.style.transform = 'translate(0,0)';
       cta.classList.add('pulse-active');
     } else {
-      // Slide + Fade OUT
+      ctaVisible = false;
       cta.style.opacity = '0';
       cta.style.pointerEvents = 'none';
-      cta.style.transform = 'translate(40px, 10px)';
+      cta.style.transform = 'translate(40px,10px)';
       cta.classList.remove('pulse-active');
     }
-  }
-
-  window.addEventListener('scroll', handleScroll);
+  });
 </script>
 
 
