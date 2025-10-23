@@ -440,39 +440,58 @@
   </style>
 
   <script>
-    // === Reveal when user scrolls to Pro Se Problem section ===
-    window.addEventListener('scroll', function(){
-      const trigger = document.getElementById('prose-problem');
-      const poll = document.getElementById('poll-hero');
-      if(!trigger || !poll) return;
-      const rect = trigger.getBoundingClientRect();
-      if(rect.top < window.innerHeight * 0.8){
-        poll.style.display = 'block';
-        poll.style.opacity = '1';
-        poll.style.transform = 'translateY(0)';
-      }
-    });
+// === Reveal when user scrolls to Pro Se Problem section ===
+window.addEventListener('scroll', function(){
+  const trigger = document.getElementById('prose-problem');
+  const poll = document.getElementById('poll-hero');
+  if(!trigger || !poll) return;
+  const rect = trigger.getBoundingClientRect();
+  if(rect.top < window.innerHeight * 0.8){
+    poll.style.display = 'block';
+    poll.style.opacity = '1';
+    poll.style.transform = 'translateY(0)';
+  }
+});
 
-    // === Poll logic + GA4 tracking ===
-    function voteHero(choice){
-      const results = {
-        yes: "12% said yes — brave optimists.",
-        no: "81% said no — they’ve seen the system up close.",
-        unsure: "7% said unsure — and that’s the danger zone."
-      };
-      document.getElementById("heroPollResult").innerHTML =
-        results[choice] +
-        " <br><br><span style='color:#D4A017;'>“Learn the rules before you need them.”</span><br>" +
-        "<a href='https://learnwithoddlaw.com#course' style='color:#C7311E;font-weight:700;text-decoration:none;'>🎓 Access the Real Course →</a>";
-      if (typeof gtag === 'function'){
-        gtag('event','poll_response',{
-          event_category:'Poll',
-          event_label:'Hero Fairness Poll',
-          poll_choice:choice
-        });
+// === Poll logic + GA4 tracking + fade-out ===
+function voteHero(choice){
+  const results = {
+    yes: "12% said yes — brave optimists.",
+    no: "81% said no — they’ve seen the system up close.",
+    unsure: "7% said unsure — and that’s the danger zone."
+  };
+  const pollBox = document.getElementById("poll-hero");
+  const resultArea = document.getElementById("heroPollResult");
+
+  resultArea.innerHTML =
+    results[choice] +
+    " <br><br><span style='color:#D4A017;'>“Learn the rules before you need them.”</span><br>" +
+    "<a href='https://learnwithoddlaw.com#course' style='color:#C7311E;font-weight:700;text-decoration:none;'>🎓 Access the Real Course →</a>";
+
+  // --- Google Analytics 4 Event Tracking ---
+  if (typeof gtag === 'function'){
+    gtag('event','poll_response',{
+      event_category:'Poll',
+      event_label:'Hero Fairness Poll',
+      poll_choice:choice
+    });
+  }
+
+  // --- Smooth fade-out after 5 seconds + auto-scroll to Pro Se Problem ---
+  setTimeout(()=>{
+    pollBox.style.transition = "opacity 0.8s ease, transform 0.8s ease";
+    pollBox.style.opacity = "0";
+    pollBox.style.transform = "translateY(20px)";
+    setTimeout(()=>{
+      pollBox.style.display = "none";
+      const next = document.getElementById('prose-problem');
+      if(next){
+        next.scrollIntoView({behavior:'smooth', block:'start'});
       }
-    }
-  </script>
+    },800); // wait for fade to finish
+  },5000);
+}
+</script>
 </section>
 
 
