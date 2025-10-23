@@ -600,7 +600,7 @@ window.addEventListener('scroll', function(){
 </section>
 
 
-  <!-- =====================
+<!-- =====================
    PRO SE PROBLEM SECTION
 ====================== -->
 
@@ -626,7 +626,7 @@ window.addEventListener('scroll', function(){
     <p style="font-size:1.15rem;line-height:1.8;margin-bottom:20px;">
       Schools taught you algebra — not how to defend your rights.
       You were never taught how to file a motion, how to object, or what the “Rules of Evidence” even mean.
-       </p>
+    </p>
     <p style="font-size:1.15rem;line-height:1.8;margin-bottom:25px;">
       Who benefits from your legal ignorance? You guessed it — <strong style="color:#D4A017;">lawyers.</strong>
     </p>
@@ -634,24 +634,23 @@ window.addEventListener('scroll', function(){
       They built a maze of rules they understand and you don’t. But that’s changing. Knowledge is power — and the rulebook is public.
     </p>
     <p style="font-size:1.2rem;font-weight:600;color:#D4A017;margin-bottom:8px;">
-  Learn it.&nbsp;&nbsp;Master it.&nbsp;&nbsp;Use it.<br>
-  Because in court, <em>what you don't know will hurt you.</em>
+      Learn it.&nbsp;&nbsp;Master it.&nbsp;&nbsp;Use it.<br>
+      Because in court, <em>what you don't know will hurt you.</em>
     </p><br>
-<p style="font-size:1.15rem;color:#4CA6A8;margin:0 0 8px 0;font-weight:700;">
-  &ldquo;Mastering this course will flip the script — you&rsquo;ll <strong style="text-transform:uppercase;">STOP</strong> being a target and start being a <strong style="text-transform:uppercase;">THREAT</strong>.&rdquo;
-</p>
-<p style="font-size:1.15rem;color:#4CA6A8;margin:0;">
-  This is what happens when knowledge meets courage.
-</p>
+    <p style="font-size:1.15rem;color:#4CA6A8;margin:0 0 8px 0;font-weight:700;">
+      &ldquo;Mastering this course will flip the script — you&rsquo;ll <strong style="text-transform:uppercase;">STOP</strong> being a target and start being a <strong style="text-transform:uppercase;">THREAT</strong>.&rdquo;
+    </p>
+    <p style="font-size:1.15rem;color:#4CA6A8;margin:0;">
+      This is what happens when knowledge meets courage.
+    </p>
   </div>
-      </div>
-    </div>
-  </section> 
+</section>
 
 <!-- =========================
  POLL #2 — “What Scares You Most About Going to Court?”
 ========================= -->
 <div style="height:40px;"></div>
+
 <section id="poll-prose" style="opacity:0;transform:translateY(40px);transition:all .6s ease;">
   <div class="poll-box">
     <h3 class="poll-heading">What scares you most about going to court?</h3>
@@ -667,106 +666,105 @@ window.addEventListener('scroll', function(){
   </div>    
 </section>
 
-    <p id="courtPollResult"
-       style="margin-top:26px;color:#4CA6A8;font-weight:600;
-              font-size:1.15rem;line-height:1.6;max-width:580px;margin-left:auto;margin-right:auto;"></p>
-
-  <style>
-    .poll2-btn {
-      background:#C7311E;
-      color:#fff;
-      padding:12px 22px;
-      border:none;
-      border-radius:10px;
-      font-size:1.05rem;
-      font-weight:700;
-      cursor:pointer;
-      transition:all .25s ease;
-    }
-    .poll2-btn:hover {
-      background:#A62616;
-      transform:translateY(-2px);
-    }
-
-    /* Mobile adjustments */
-    @media (max-width:768px){
-      .poll2-btn {
-        font-size:1rem;
-        padding:10px 18px;
-      }
-      #poll-prose h3 {
-        font-size:1.35rem;
-      }
-      #courtPollResult {
-        font-size:1.1rem;
-      }
-    }
-  </style>
-
-  <script>
-    // === Reveal when user scrolls near Coming Up section ===
-    window.addEventListener('scroll', function(){
-      const trigger = document.getElementById('coming-up');
-      const poll = document.getElementById('poll-prose');
-      if(!trigger || !poll) return;
-      const rect = trigger.getBoundingClientRect();
-      if(rect.top < window.innerHeight * 0.85){
-        poll.style.opacity = '1';
-        poll.style.transform = 'translateY(0)';
-      }
-    });
-
-    // === Poll logic + GA4 tracking + fade-out ===
-    function voteCourt(choice){
-  const responses = {
-    paperwork: "Most people fear the paperwork — and that’s exactly how the system wins.",
-    judge: "The judge? Understandable fear. But once you know the rules, the robe loses its power.",
-    speak: "Saying the wrong thing scares everyone — until you learn the 3-step formula.",
-    lose: "Losing everything isn’t inevitable — it’s preventable with procedure."
-  };
-  const pollBox = document.getElementById("poll-prose");
-  const resultArea = document.getElementById("courtPollResult");
-
-  // Display result + thank you message
-  resultArea.innerHTML =
-    responses[choice] +
-    "<br><br><span style='color:#D4A017;'>Mr. Oddlaw says:</span> ‘Fear fades when you learn the rules.’<br>" +
-    "<br><a href='https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031' target='_blank' style='color:#C7311E;font-weight:700;text-decoration:none;'>🎓 Access the Real Course →</a>" +
-    "<br><br><span style='color:#4CA6A8;opacity:0;transition:opacity 1s ease;' id='courtThankYou'>Thank you for voting.</span>";
-
-  // Fade in the thank-you message after 1 second
-  setTimeout(()=>{
-    const ty = document.getElementById('courtThankYou');
-    if(ty) ty.style.opacity = 1;
-  },1000);
-
-  // GA4 tracking
-  if (typeof gtag === 'function'){
-    gtag('event','poll_response',{
-      event_category:'Poll',
-      event_label:'Pro Se Fear Poll',
-      poll_choice:choice
-    });
+<style>
+  .poll2-btn {
+    background:#C7311E;
+    color:#fff;
+    padding:12px 22px;
+    border:none;
+    border-radius:10px;
+    font-size:1.05rem;
+    font-weight:700;
+    cursor:pointer;
+    transition:all .25s ease;
+  }
+  .poll2-btn:hover {
+    background:#A62616;
+    transform:translateY(-2px);
   }
 
-  // Smooth fade-out after 10 seconds + auto-scroll to Coming Up
-  setTimeout(()=>{
-    pollBox.style.transition = "opacity 1s ease, transform 1s ease";
-    pollBox.style.opacity = "0";
-    pollBox.style.transform = "translateY(25px)";
-    setTimeout(()=>{
-      pollBox.style.display = "none";
-      const next = document.getElementById('coming-up');
-      if(next){
-        next.scrollIntoView({behavior:'smooth', block:'start'});
-      }
-    },1000);
-  },10000);
-}
-</script>
-</section>
+  /* Mobile adjustments */
+  @media (max-width:768px){
+    .poll2-btn {
+      font-size:1rem;
+      padding:10px 18px;
+    }
+    #poll-prose h3 {
+      font-size:1.35rem;
+    }
+    #courtPollResult {
+      font-size:1.1rem;
+    }
+  }
+</style>
 
-  
+<script>
+  let courtPollShown = false;
+
+  // === Reveal when user scrolls near Coming Up section ===
+  window.addEventListener('scroll', function(){
+    if (courtPollShown) return;  // prevent multiple triggers
+    const trigger = document.getElementById('coming-up');
+    const poll = document.getElementById('poll-prose');
+    if(!trigger || !poll) return;
+    const rect = trigger.getBoundingClientRect();
+    if(rect.top < window.innerHeight * 0.85){
+      poll.style.opacity = '1';
+      poll.style.transform = 'translateY(0)';
+      courtPollShown = true;
+    }
+  });
+
+  // === Poll logic + GA4 tracking + fade-out ===
+  function voteCourt(choice){
+    const responses = {
+      paperwork: "Most people fear the paperwork — and that’s exactly how the system wins.",
+      judge: "The judge? Understandable fear. But once you know the rules, the robe loses its power.",
+      speak: "Saying the wrong thing scares everyone — until you learn the 3-step formula.",
+      lose: "Losing everything isn’t inevitable — it’s preventable with procedure."
+    };
+    const pollBox = document.getElementById("poll-prose");
+    const resultArea = document.getElementById("courtPollResult");
+
+    // Display result + thank you message
+    resultArea.innerHTML =
+      responses[choice] +
+      "<br><br><span style='color:#D4A017;'>Mr. Oddlaw says:</span> ‘Fear fades when you learn the rules.’<br>" +
+      "<a href='https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031' target='_blank' style='color:#C7311E;font-weight:700;text-decoration:none;'>🎓 Access the Real Course →</a>" +
+      "<br><br><span style='color:#4CA6A8;opacity:0;transition:opacity 1s ease;' id='courtThankYou'>Thank you for voting.</span>";
+
+    // Fade in the thank-you message after 1 second
+    setTimeout(()=>{
+      const ty = document.getElementById('courtThankYou');
+      if(ty) ty.style.opacity = 1;
+    },1000);
+
+    // GA4 tracking
+    if (typeof gtag === 'function'){
+      gtag('event','poll_response',{
+        event_category:'Poll',
+        event_label:'Pro Se Fear Poll',
+        poll_choice:choice
+      });
+    }
+
+    // Smooth fade-out after 10 seconds + auto-scroll to Coming Up
+    setTimeout(()=>{
+      pollBox.style.transition = "opacity 1s ease, transform 1s ease";
+      pollBox.style.opacity = "0";
+      pollBox.style.transform = "translateY(25px)";
+      setTimeout(()=>{
+        pollBox.style.display = "none";
+        const next = document.getElementById('coming-up');
+        if(next){
+          next.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      },1000);
+    },10000);
+  }
+</script>
+
+ 
 <!-- === ODDLAW TRANSITION PROMPT === -->
 <!-- === COMING UP GOLD BOX === -->
 <section id="coming-up" style="background:#0f0f0f;padding:80px 20px;text-align:center;border-top:1px solid rgba(212,160,23,0.15);border-bottom:1px solid rgba(212,160,23,0.15);">
