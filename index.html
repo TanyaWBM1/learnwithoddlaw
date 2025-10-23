@@ -361,6 +361,78 @@
     transform: translateY(0) !important;
   }
 </style>
+
+<!-- === GLOBAL POLL STYLES (Full-Box Pulse + Unified Design) === -->
+<style>
+  /* ---------- Base container styles ---------- */
+  #poll-hero, #poll-prose, #poll-course {
+    text-align:center;
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .6s ease;
+    margin-top:-25px;
+    margin-bottom:40px;
+  }
+
+  /* ---------- Animated poll box ---------- */
+  @keyframes pollPulse {
+    0%   {background:rgba(255,255,255,0.02); box-shadow:0 0 15px rgba(212,160,23,0.15);}
+    50%  {background:rgba(212,160,23,0.06); box-shadow:0 0 35px rgba(212,160,23,0.45);}
+    100% {background:rgba(255,255,255,0.02); box-shadow:0 0 15px rgba(212,160,23,0.15);}
+  }
+
+  .poll-box {
+    border:1px solid rgba(212,160,23,0.5);
+    border-radius:14px;
+    padding:32px 22px;
+    max-width:680px;
+    margin:15px auto 35px;
+    animation:pollPulse 6s ease-in-out infinite;
+  }
+
+  /* ---------- Text + buttons ---------- */
+  .poll-heading {
+    color:#D4A017;
+    font-size:1.45rem;
+    line-height:1.4;
+    margin-bottom:18px;
+    text-shadow:0 0 8px rgba(212,160,23,.25);
+  }
+  .poll-btn, .poll2-btn, .poll3-btn {
+    background:#C7311E;
+    color:#fff;
+    padding:12px 22px;
+    border:none;
+    border-radius:10px;
+    font-size:1.05rem;
+    font-weight:700;
+    cursor:pointer;
+    transition:all .25s ease;
+    margin:6px;
+  }
+  .poll-btn:hover, .poll2-btn:hover, .poll3-btn:hover {
+    background:#A62616;
+    transform:translateY(-2px);
+  }
+  .poll-result {
+    margin-top:26px;
+    color:#4CA6A8;
+    font-weight:600;
+    font-size:1.15rem;
+    line-height:1.6;
+    max-width:580px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:768px){
+    .poll-box{padding:28px 18px;}
+    .poll-heading{font-size:1.35rem;}
+    .poll-btn, .poll2-btn, .poll3-btn{font-size:1rem;padding:10px 18px;}
+    .poll-result{font-size:1.1rem;}
+  }
+</style>
   
 </head>
 <body>
