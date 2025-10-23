@@ -407,6 +407,75 @@
     </div>
   </section>
 
+<!-- =========================
+ POLL #1 — “Do You Think the Legal System Is Fair?”
+ (Appears when user scrolls to Pro Se Problem)
+========================= -->
+<section id="poll-hero" style="text-align:center;display:none;opacity:0;transform:translateY(40px);transition:all .6s ease;">
+  <div style="border:1px solid rgba(212,160,23,0.5);border-radius:14px;
+              padding:30px 20px;max-width:600px;margin:60px auto;
+              background:rgba(255,255,255,0.02);
+              box-shadow:0 0 25px rgba(212,160,23,0.15);
+              animation:goldPulse 6s ease-in-out infinite;">
+    <h3 style="color:#D4A017;margin-bottom:14px;font-size:1.3rem;">
+      Do you think the legal system is fair?
+    </h3>
+
+    <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;">
+      <button class="poll-btn" onclick="voteHero('yes')">Yes</button>
+      <button class="poll-btn" onclick="voteHero('no')">No</button>
+      <button class="poll-btn" onclick="voteHero('unsure')">Not Sure</button>
+    </div>
+
+    <p id="heroPollResult" style="margin-top:18px;color:#4CA6A8;font-weight:600;font-size:1.1rem;"></p>
+  </div>
+
+  <style>
+    .poll-btn {
+      background:#C7311E;color:#fff;padding:10px 18px;border:none;
+      border-radius:8px;font-weight:700;cursor:pointer;
+      transition:all .25s ease;
+    }
+    .poll-btn:hover {background:#A62616;transform:translateY(-2px);}
+  </style>
+
+  <script>
+    // === Reveal when user scrolls to Pro Se Problem section ===
+    window.addEventListener('scroll', function(){
+      const trigger = document.getElementById('prose-problem');
+      const poll = document.getElementById('poll-hero');
+      if(!trigger || !poll) return;
+      const rect = trigger.getBoundingClientRect();
+      if(rect.top < window.innerHeight * 0.8){
+        poll.style.display = 'block';
+        poll.style.opacity = '1';
+        poll.style.transform = 'translateY(0)';
+      }
+    });
+
+    // === Poll logic + GA4 tracking ===
+    function voteHero(choice){
+      const results = {
+        yes: "12% said yes — brave optimists.",
+        no: "81% said no — they’ve seen the system up close.",
+        unsure: "7% said unsure — and that’s the danger zone."
+      };
+      document.getElementById("heroPollResult").innerHTML =
+        results[choice] +
+        " <br><br><span style='color:#D4A017;'>“Learn the rules before you need them.”</span><br>" +
+        "<a href='https://learnwithoddlaw.com#course' style='color:#C7311E;font-weight:700;text-decoration:none;'>🎓 Access the Real Course →</a>";
+      if (typeof gtag === 'function'){
+        gtag('event','poll_response',{
+          event_category:'Poll',
+          event_label:'Hero Fairness Poll',
+          poll_choice:choice
+        });
+      }
+    }
+  </script>
+</section>
+
+
   <!-- =====================
    PRO SE PROBLEM SECTION
 ====================== -->
