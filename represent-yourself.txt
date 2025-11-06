@@ -1,0 +1,145 @@
+<!-- ============================================================
+ LEARN WITH ODDLAW — REPRESENT YOURSELF IN COURT (PRO SE GUIDE)
+ Author: Tanya Lawson | Version 1.0 | Created 2025-11-06
+=============================================================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Represent Yourself in Court (Pro Se Litigant Guide) — Learn With Mr. Oddlaw</title>
+
+  <meta name="description" content="Official guide to representing yourself in court. Mr. Oddlaw explains how to prepare, file, and argue your case without a lawyer — in plain English." />
+  <meta name="keywords" content="represent yourself in court, pro se litigant, self representation, legal self help, how to win in court, Mr. Oddlaw, Tanya Lawson, Learn With Oddlaw" />
+  <link rel="canonical" href="https://learnwithoddlaw.com/represent-yourself.html" />
+
+  <!-- SOCIAL PREVIEW -->
+  <meta property="og:title" content="Represent Yourself in Court — Learn With Mr. Oddlaw" />
+  <meta property="og:description" content="Step-by-step guide for pro se litigants. Learn how to prepare, file, and win without a lawyer." />
+  <meta property="og:image" content="https://learnwithoddlaw.com/images/oddlaw-courtroom-victory.png" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://learnwithoddlaw.com/represent-yourself.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Represent Yourself in Court — Learn With Mr. Oddlaw" />
+  <meta name="twitter:description" content="Learn courtroom procedure and self-representation in plain English — no law degree required." />
+
+  <!-- STRUCTURED DATA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Represent Yourself in Court (Pro Se Litigant Guide)",
+    "url": "https://learnwithoddlaw.com/represent-yourself.html",
+    "description": "Educational guide explaining how to represent yourself (pro se) in court. Learn filing, evidence, and motion procedures.",
+    "publisher": {
+      "@type": "Person",
+      "name": "Tanya Lawson",
+      "url": "https://learnwithoddlaw.com"
+    },
+    "mainEntity": [{
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I legally represent myself in court?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every citizen has the constitutional right to self-representation. You are held to the same procedural standards as attorneys."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do most pro se litigants lose?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most lose because of procedural errors — missed deadlines, improper filing, or inadmissible evidence — not because their cases lack merit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I learn courtroom procedure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 'How to Win in Court' course by Dr. Frederick Graves teaches step-by-step procedure using real case examples in plain English."
+          }
+        }
+      ]
+    }]
+  }
+  </script>
+
+  <!-- STYLES -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" /> <!-- optional shared CSS -->
+  <style>
+    body { background:#0f0f0f; color:#f8f8f8; font-family:'Inter',sans-serif; margin:0; line-height:1.7; }
+    h1,h2 { color:#D4A017; text-align:center; }
+    h1 { margin:50px 0 20px; font-size:clamp(2rem,5vw,3rem); }
+    h2 { margin:50px 0 20px; font-size:clamp(1.6rem,4vw,2.4rem); }
+    p,li { color:#ddd; font-size:1.05rem; }
+    .wrap { max-width:900px; margin:0 auto; padding:0 20px; }
+    .btn { display:inline-block; background:#C7311E; color:#fff; padding:14px 26px; border-radius:10px; font-weight:800; text-decoration:none; }
+    .btn:hover { background:#A62616; }
+    footer { background:#0c0c0c; padding:40px 20px; text-align:center; font-size:.9rem; color:#888; margin-top:80px; border-top:1px solid rgba(255,255,255,0.05);}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Represent Yourself in Court (Pro Se Litigant Guide)</h1>
+      <p style="text-align:center;max-width:700px;margin:0 auto 30px;">
+        You have the right to stand up for yourself — in court.  
+        This page explains how to prepare, file, and argue your case without a lawyer, in the same system lawyers use every day.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap" id="meaning">
+      <h2>What “Pro Se” Means</h2>
+      <p><strong>Pro Se</strong> is Latin for “for oneself.” It refers to individuals who represent themselves in court without hiring an attorney.</p>
+      <p>Judges will not give you special treatment. The same rules that bind lawyers bind you — but with the right preparation, you can navigate them confidently.</p>
+    </section>
+
+    <section class="wrap" id="steps">
+      <h2>Five Steps to Represent Yourself</h2>
+      <ol>
+        <li><strong>Understand the Rules:</strong> Each court has written procedures and evidence rules. Learn them first.</li>
+        <li><strong>Prepare Documents:</strong> Draft your complaint, motion, or response clearly. Templates and examples are available in Mr. Oddlaw’s resource library.</li>
+        <li><strong>File & Serve Properly:</strong> File with the clerk and serve all parties within required time limits. Deadlines are non-negotiable.</li>
+        <li><strong>Organize Evidence:</strong> Make sure your exhibits, witnesses, and statements are admissible under the Rules of Evidence.</li>
+        <li><strong>Practice the Hearing:</strong> Rehearse what you’ll say, when to object, and how to stay composed when challenged.</li>
+      </ol>
+      <p style="text-align:center;color:#4CA6A8;margin-top:20px;">
+        “Most people lose not because they’re wrong — but because they missed a rule.” — Mr. Oddlaw
+      </p>
+    </section>
+
+    <section class="wrap" id="resources">
+      <h2>Free & Trusted Resources</h2>
+      <ul>
+        <li><a href="faq.html" style="color:#D4A017;">Legal FAQs — Common Court Questions</a></li>
+        <li><a href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" style="color:#C7311E;">🎓 How to Win in Court Without a Lawyer — Step-by-Step Course</a></li>
+        <li><a href="https://learnwithoddlaw.com" style="color:#4CA6A8;">LearnWithOddlaw.com — Law, Unfiltered.</a></li>
+      </ul>
+    </section>
+
+    <section class="wrap" id="cta" style="text-align:center;">
+      <h2 style="margin-top:70px;">Ready to Learn the Rules?</h2>
+      <p style="max-width:720px;margin:0 auto 25px;">
+        This site partners with Dr. Frederick Graves’ <em>Jurisdictionary® How to Win in Court</em> program — a proven training course used by students, paralegals, and pro se litigants nationwide.
+      </p>
+      <a class="btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">⚖️ Access the Course →</a>
+      <p style="font-size:.95rem;color:#888;margin-top:16px;">
+        Affiliate disclosure: If you enroll using this link, Learn With Oddlaw may receive a commission — at no extra cost to you.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Tanya Lawson · Learn With Oddlaw</p>
+    <p><a href="privacy-policy.html" style="color:#888;">Privacy Policy</a> | <a href="terms-of-use.html" style="color:#888;">Terms of Use</a></p>
+  </footer>
+</body>
+</html>
