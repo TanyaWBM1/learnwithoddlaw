@@ -329,82 +329,149 @@
       </p>
     </div>
   </footer>
+<!-- ===========================
+ STRUCTURED DATA — REPRESENT YOURSELF PAGE
+ Includes: Breadcrumb + FAQ + HowTo
+ Optimized for LearnWithOddlaw.com
+ Author: Tanya Lawson | Updated 2025-11-06
+=========================== -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "Five Steps to Represent Yourself in Court",
-  "description": "A complete five-step process explaining how to represent yourself (pro se) in court — from learning the rules to practicing your hearing.",
-  "image": "https://learnwithoddlaw.com/images/oddlaw-prose-handbook-offer.png",
-  "totalTime": "P7D",
-  "estimatedCost": {
-    "@type": "MonetaryAmount",
-    "currency": "USD",
-    "value": "0"
-  },
-  "supply": [
+  "@graph": [
+
+    /* ======================
+       BREADCRUMB SCHEMA
+    ======================= */
     {
-      "@type": "HowToSupply",
-      "name": "Pro Se Handbook PDF"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Learn With Mr. Oddlaw",
+          "item": "https://learnwithoddlaw.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Represent Yourself in Court",
+          "item": "https://learnwithoddlaw.com/represent-yourself.html"
+        }
+      ]
     },
+
+    /* ======================
+       FAQ SCHEMA
+    ======================= */
     {
-      "@type": "HowToSupply",
-      "name": "Court procedural rules (state or federal)"
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I legally represent myself in court?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every citizen has the constitutional right to self-representation, often called appearing pro se. You will be held to the same procedural standards as licensed attorneys."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do most pro se litigants lose?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most pro se litigants lose due to procedural errors — missed deadlines, improper filing, or inadmissible evidence — not because their cases lack merit. The system rewards those who know the process."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I learn courtroom procedure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The 'How to Win in Court' course by Dr. Frederick Graves teaches step-by-step courtroom procedure using real case examples, written in plain English so anyone can follow and apply it."
+          }
+        }
+      ]
+    },
+
+    /* ======================
+       HOWTO SCHEMA
+    ======================= */
+    {
+      "@type": "HowTo",
+      "name": "Five Steps to Represent Yourself in Court",
+      "description": "A complete five-step process explaining how to represent yourself (pro se) in court — from learning the rules to practicing your hearing.",
+      "image": "https://learnwithoddlaw.com/images/oddlaw-prose-handbook-offer.png",
+      "totalTime": "P7D",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "USD",
+        "value": "0"
+      },
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Pro Se Handbook PDF"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Court procedural rules (state or federal)"
+        }
+      ],
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "Computer and printer"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "Court forms or templates"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Understand the Rules",
+          "text": "Every courtroom has its own playbook — the Rules of Procedure and the Rules of Evidence. Read your jurisdiction’s sections on motions, service, and deadlines to navigate with confidence."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Prepare Documents",
+          "text": "Write your complaint, motion, or response using numbered paragraphs, plain English headings, and proper case captions. Avoid emotional language; precision earns respect."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "File and Serve Properly",
+          "text": "Submit your documents to the court clerk and serve all parties correctly within the required time limits. Always confirm filing dates and keep proof of service."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Organize Evidence",
+          "text": "Gather all exhibits, witness lists, and proof that meet the Rules of Evidence. Label them clearly so the judge can easily follow your narrative through documentation."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Practice the Hearing",
+          "text": "Rehearse what you’ll say in court, when to object, and how to stay composed under pressure. Confidence and clarity strengthen your presence before the judge."
+        }
+      ],
+      "publisher": {
+        "@type": "Organization",
+        "name": "Learn With Mr. Oddlaw",
+        "url": "https://learnwithoddlaw.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://learnwithoddlaw.com/images/social-preview3.png"
+        }
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Tanya Lawson",
+        "url": "https://learnwithoddlaw.com"
+      }
     }
-  ],
-  "tool": [
-    {
-      "@type": "HowToTool",
-      "name": "Computer and printer"
-    },
-    {
-      "@type": "HowToTool",
-      "name": "Court forms or templates"
-    }
-  ],
-  "step": [
-    {
-      "@type": "HowToStep",
-      "name": "Understand the Rules",
-      "text": "Every courtroom has its own playbook — the Rules of Procedure and the Rules of Evidence. Read your jurisdiction’s sections on motions, service, and deadlines to navigate with confidence."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Prepare Documents",
-      "text": "Write your complaint, motion, or response using numbered paragraphs, plain English headings, and proper case captions. Avoid emotional language; precision earns respect."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "File and Serve Properly",
-      "text": "Submit your documents to the court clerk and serve all parties correctly within the required time limits. Always confirm filing dates and keep proof of service."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Organize Evidence",
-      "text": "Gather all exhibits, witness lists, and proof that meet the Rules of Evidence. Label them clearly so the judge can easily follow your narrative through documents."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Practice the Hearing",
-      "text": "Rehearse what you’ll say in court, when to object, and how to stay composed under pressure. Confidence and clarity strengthen your presence before the judge."
-    }
-  ],
-  "publisher": {
-    "@type": "Organization",
-    "name": "Learn With Mr. Oddlaw",
-    "url": "https://learnwithoddlaw.com",
-    "logo": "https://learnwithoddlaw.com/images/social-preview3.png"
-  },
-  "author": {
-    "@type": "Person",
-    "name": "Tanya Lawson",
-    "url": "https://learnwithoddlaw.com"
-  }
+  ]
 }
 </script>
 </body>
 </html>
-
-
-
-
