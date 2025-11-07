@@ -1,15 +1,16 @@
 <!-- ============================================================
  LEARN WITH ODDLAW — REPRESENT YOURSELF IN COURT (PRO SE GUIDE)
- Author: Tanya Lawson | Version 1.1 | Updated 2025-11-06
+ Author: Tanya Lawson | Version 1.2 | Updated 2025-11-07
 =============================================================== -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Core Meta -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Represent Yourself in Court (Pro Se Litigant Guide) — Learn With Mr. Oddlaw</title>
-
   <meta name="description" content="Official guide to representing yourself in court. Mr. Oddlaw explains how to prepare, file, and argue your case without a lawyer — in plain English." />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <link rel="canonical" href="https://learnwithoddlaw.com/represent-yourself.html" />
 
   <!-- Social -->
@@ -18,11 +19,13 @@
   <meta property="og:image" content="https://learnwithoddlaw.com/images/oddlaw-prose-handbook-offer.png" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://learnwithoddlaw.com/represent-yourself.html" />
+  <meta property="og:site_name" content="Learn With Mr. Oddlaw" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Represent Yourself in Court — Learn With Mr. Oddlaw" />
   <meta name="twitter:description" content="Learn courtroom procedure and self-representation in plain English — no law degree required." />
+  <meta name="twitter:image" content="https://learnwithoddlaw.com/images/oddlaw-prose-handbook-offer.png" />
 
-  <!-- Structured Data -->
+  <!-- Primary Structured Data (WebPage) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -30,18 +33,10 @@
     "name":"Represent Yourself in Court (Pro Se Litigant Guide)",
     "url":"https://learnwithoddlaw.com/represent-yourself.html",
     "description":"Educational guide explaining how to represent yourself (pro se) in court. Learn filing, evidence, and motion procedures.",
+    "inLanguage":"en",
+    "isPartOf":{"@type":"WebSite","name":"Learn With Mr. Oddlaw","url":"https://learnwithoddlaw.com"},
     "publisher":{"@type":"Person","name":"Tanya Lawson","url":"https://learnwithoddlaw.com"},
-    "mainEntityOfPage":{"@type":"WebSite","name":"Learn With Mr. Oddlaw","url":"https://learnwithoddlaw.com"},
-    "mainEntity":[
-      {
-        "@type":"FAQPage",
-        "mainEntity":[
-          {"@type":"Question","name":"Can I legally represent myself in court?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every citizen has the constitutional right to self-representation. You are held to the same procedural standards as attorneys."}},
-          {"@type":"Question","name":"Why do most pro se litigants lose?","acceptedAnswer":{"@type":"Answer","text":"Most lose because of procedural errors — missed deadlines, improper filing, or inadmissible evidence — not because their cases lack merit."}},
-          {"@type":"Question","name":"How can I learn courtroom procedure?","acceptedAnswer":{"@type":"Answer","text":"The 'How to Win in Court' course by Dr. Frederick Graves teaches step-by-step procedure using real case examples in plain English."}}
-        ]
-      }
-    ]
+    "dateModified":"2025-11-07"
   }
   </script>
 
@@ -53,10 +48,10 @@
     :root{
       --bg:#0f0f0f;
       --panel:#121212;
-      --text:#f2f2f2;         /* brighter body text */
+      --text:#f2f2f2;
       --muted:#bdbdbd;
-      --gold:#D4A017;         /* headings / accents */
-      --teal:#4CA6A8;         /* supportive accent */
+      --gold:#D4A017;
+      --teal:#4CA6A8;
       --red:#C7311E;
       --maxw:1120px;
       --space-1:10px;
@@ -72,7 +67,7 @@
     /* Base */
     html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
     body{font-size:18px;line-height:1.85;letter-spacing:.1px;}
-    img{max-width:100%;display:block;}
+    img{max-width:100%;display:block;height:auto}
     a{color:inherit;text-decoration:none}
     .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px;}
 
@@ -89,7 +84,7 @@
     h2{font-size:clamp(1.7rem,3.6vw,2.4rem);line-height:1.14;margin-top:var(--space-5);position:relative;padding-bottom:14px}
     h2::after{content:"";position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:160px;height:3px;background:linear-gradient(90deg,transparent,rgba(212,160,23,.9),transparent);box-shadow:0 0 12px rgba(212,160,23,.5);border-radius:2px}
 
-    p, li{color:var(--text);font-size:1.25rem} /* larger white explanatory text */
+    p, li{color:var(--text);font-size:1.05rem}
     .lead{max-width:820px;margin:0 auto var(--space-4);text-align:center;color:#e9e9e9}
 
     /* Sections */
@@ -137,7 +132,7 @@
 <body>
 
   <!-- Topbar / Back Home -->
-  <div class="topbar">
+  <div class="topbar" role="navigation" aria-label="Site">
     <div class="topbar-inner">
       <div class="brand">Learn With Mr. Oddlaw</div>
       <div class="crumb">
@@ -157,11 +152,11 @@
           your case without a lawyer, using the same rules lawyers use every day.
         </p>
         <div class="center" style="margin-top: var(--space-3);">
-          <a class="btn" href="Pro-Se-Handbook-APPROVED-v2019-2.pdf#view=FitH" target="_blank" rel="noopener noreferrer">
+          <a class="btn" href="Pro-Se-Handbook-APPROVED-v2019-2.pdf#view=FitH" target="_blank" rel="noopener noreferrer" aria-label="Download the Free Pro Se Handbook PDF">
             📘 Download the Free Pro Se Handbook (PDF)
           </a>
           <div style="margin-top:10px;">
-            <a class="btn-ghost" href="#steps">Or, see the Five Steps ↓</a>
+            <a class="btn-ghost" href="#five-steps" aria-label="Jump to Five Steps section">Or, see the Five Steps ↓</a>
           </div>
         </div>
       </div>
@@ -175,10 +170,10 @@
   </header>
 
   <!-- WHAT PRO SE MEANS -->
-  <section class="section">
+  <section class="section" aria-labelledby="about-prose">
     <div class="wrap grid-2">
       <div class="panel">
-        <h2>What “Pro Se” Means</h2>
+        <h2 id="about-prose">What “Pro Se” Means</h2>
         <p><strong>Pro Se</strong> is Latin for “for oneself.” It refers to individuals who represent themselves in court without hiring an attorney.</p>
         <p>Judges won’t give special treatment. The rules that bind lawyers bind you — but with preparation and discipline, you can navigate them confidently.</p>
       </div>
@@ -191,108 +186,107 @@
   </section>
 
   <!-- ===========================
- FIVE STEPS TO REPRESENT YOURSELF (EXPANDED)
- Matches Oddlaw Gold–Teal Visual System
-=========================== -->
-<section class="wrap" id="five-steps">
-  <h2 style="color:#D4A017;text-align:center;margin-bottom:40px;">Five Steps to Represent Yourself in Court</h2>
+       FIVE STEPS TO REPRESENT YOURSELF (EXPANDED)
+       =========================== -->
+  <section class="wrap" id="five-steps" aria-labelledby="five-steps-title">
+    <h2 id="five-steps-title" style="color:#D4A017;text-align:center;margin-bottom:40px;">Five Steps to Represent Yourself in Court</h2>
 
-  <!-- Step 1 -->
-  <h3 style="color:#D4A017;margin-top:50px;">1️⃣ Understand the Rules</h3>
-  <p style="color:#f8f8f8;line-height:1.85;">
-    Every courtroom has its own playbook — and it’s written down. It’s called the 
-    <strong>Rules of Procedure</strong> and the <strong>Rules of Evidence</strong>, and they govern everything that happens inside those walls.
-    These rules tell you <em>how to file</em>, <em>what to file</em>, and <em>when</em> to file it. They also explain how judges decide what counts as valid proof.
-  </p>
-  <p style="color:#f8f8f8;line-height:1.85;">
-    Don’t guess. Download your <strong>state or federal procedural rules</strong> and read the sections on 
-    <strong>motions, service, and deadlines.</strong> When you know the rules, the courtroom stops feeling like a mystery and starts feeling like a map.
-  </p>
-  <p style="color:#4CA6A8;font-weight:600;">
-    🧠 <strong>Pro Tip:</strong> Judges won’t teach you the rules — but they respect anyone who takes the time to learn them. 
-    The rules are your shield and your sword.
-  </p>
+    <!-- Step 1 -->
+    <h3 style="color:#D4A017;margin-top:50px;">1️⃣ Understand the Rules</h3>
+    <p style="color:#f8f8f8;line-height:1.85;">
+      Every courtroom has its own playbook — and it’s written down. It’s called the
+      <strong>Rules of Procedure</strong> and the <strong>Rules of Evidence</strong>, and they govern everything that happens inside those walls.
+      These rules tell you <em>how to file</em>, <em>what to file</em>, and <em>when</em> to file it. They also explain how judges decide what counts as valid proof.
+    </p>
+    <p style="color:#f8f8f8;line-height:1.85;">
+      Don’t guess. Download your <strong>state or federal procedural rules</strong> and read the sections on
+      <strong>motions, service, and deadlines.</strong> When you know the rules, the courtroom stops feeling like a mystery and starts feeling like a map.
+    </p>
+    <p style="color:#4CA6A8;font-weight:600;">
+      🧠 <strong>Pro Tip:</strong> Judges won’t teach you the rules — but they respect anyone who takes the time to learn them.
+      The rules are your shield and your sword.
+    </p>
 
-  <!-- Step 2 -->
-  <h3 style="color:#D4A017;margin-top:50px;">2️⃣ Prepare Documents</h3>
-  <p style="color:#f8f8f8;">
-    Every case lives and dies on paperwork. Your filings — complaints, motions, responses, or affidavits — are how you speak to the court.
-    The clearer and cleaner they are, the stronger your position becomes.
-  </p>
-  <p style="color:#f8f8f8;">
-    Use <strong>plain English headings</strong>, <strong>numbered paragraphs</strong>, and <strong>proper case captions</strong> 
-    (the top section that names the parties and the court). Avoid emotional language — courts reward precision, not passion.
-    When you write like a professional, you earn credibility before you ever speak a word.
-  </p>
-  <p style="color:#4CA6A8;font-weight:600;">
-    ✍️ <strong>Pro Tip:</strong> Study a few sample filings from your local court’s online docket. 
-    Mimic their format — not their tone. Consistency makes you look competent.
-  </p>
+    <!-- Step 2 -->
+    <h3 style="color:#D4A017;margin-top:50px;">2️⃣ Prepare Documents</h3>
+    <p style="color:#f8f8f8;">
+      Every case lives and dies on paperwork. Your filings — complaints, motions, responses, or affidavits — are how you speak to the court.
+      The clearer and cleaner they are, the stronger your position becomes.
+    </p>
+    <p style="color:#f8f8f8;">
+      Use <strong>plain English headings</strong>, <strong>numbered paragraphs</strong>, and <strong>proper case captions</strong>
+      (the top section that names the parties and the court). Avoid emotional language — courts reward precision, not passion.
+      When you write like a professional, you earn credibility before you ever speak a word.
+    </p>
+    <p style="color:#4CA6A8;font-weight:600;">
+      ✍️ <strong>Pro Tip:</strong> Study a few sample filings from your local court’s online docket.
+      Mimic their format — not their tone. Consistency makes you look competent.
+    </p>
 
-  <!-- Step 3 -->
-  <h3 style="color:#D4A017;margin-top:50px;">3️⃣ File &amp; Serve Properly</h3>
-  <p style="color:#f8f8f8;">
-    You can write the best motion in the world — but if you file it late or fail to serve the other party, it doesn’t count.
-    Filing means <strong>officially submitting your document to the clerk</strong>. Service means 
-    <strong>delivering a copy to the opposing party</strong> using an approved method (mail, certified mail, or process server).
-  </p>
-  <p style="color:#f8f8f8;">
-    Every rule has a <strong>deadline</strong>, and missing one can destroy your entire case — even if you’re right.
-    When in doubt, file early, confirm receipt with the clerk, and keep copies of everything (including timestamps and receipts).
-  </p>
-  <p style="color:#4CA6A8;font-weight:600;">
-    ⏰ <strong>Pro Tip:</strong> Courts run on paperwork clocks. Always ask, “What’s my deadline?” before you hit print.
-  </p>
+    <!-- Step 3 -->
+    <h3 style="color:#D4A017;margin-top:50px;">3️⃣ File &amp; Serve Properly</h3>
+    <p style="color:#f8f8f8;">
+      You can write the best motion in the world — but if you file it late or fail to serve the other party, it doesn’t count.
+      Filing means <strong>officially submitting your document to the clerk</strong>. Service means
+      <strong>delivering a copy to the opposing party</strong> using an approved method (mail, certified mail, or process server).
+    </p>
+    <p style="color:#f8f8f8;">
+      Every rule has a <strong>deadline</strong>, and missing one can destroy your entire case — even if you’re right.
+      When in doubt, file early, confirm receipt with the clerk, and keep copies of everything (including timestamps and receipts).
+    </p>
+    <p style="color:#4CA6A8;font-weight:600;">
+      ⏰ <strong>Pro Tip:</strong> Courts run on paperwork clocks. Always ask, “What’s my deadline?” before you hit print.
+    </p>
 
-  <!-- Step 4 -->
-  <h3 style="color:#D4A017;margin-top:50px;">4️⃣ Organize Evidence</h3>
-  <p style="color:#f8f8f8;">
-    You don’t win cases by arguing your truth — you win by <strong>proving it</strong>.
-    Evidence is your proof, but not all proof is admissible. Courts only allow evidence that meets the 
-    <strong>Rules of Evidence</strong>, meaning it’s relevant, reliable, and authenticated.
-  </p>
-  <p style="color:#f8f8f8;">
-    Label each exhibit clearly: <em>Exhibit A – Email from Landlord (June 3, 2024)</em>, 
-    <em>Exhibit B – Repair Invoice</em>, and so on. Create a binder or digital folder for your exhibits, witness list, and case law.
-    Make it easy for the judge to follow your story through documentation, not emotion.
-  </p>
-  <p style="color:#4CA6A8;font-weight:600;">
-    📂 <strong>Pro Tip:</strong> Think like a librarian — every piece of paper should have a place, purpose, and label. 
-    Chaos kills credibility.
-  </p>
+    <!-- Step 4 -->
+    <h3 style="color:#D4A017;margin-top:50px;">4️⃣ Organize Evidence</h3>
+    <p style="color:#f8f8f8;">
+      You don’t win cases by arguing your truth — you win by <strong>proving it</strong>.
+      Evidence is your proof, but not all proof is admissible. Courts only allow evidence that meets the
+      <strong>Rules of Evidence</strong>, meaning it’s relevant, reliable, and authenticated.
+    </p>
+    <p style="color:#f8f8f8;">
+      Label each exhibit clearly: <em>Exhibit A – Email from Landlord (June 3, 2024)</em>,
+      <em>Exhibit B – Repair Invoice</em>, and so on. Create a binder or digital folder for your exhibits, witness list, and case law.
+      Make it easy for the judge to follow your story through documentation, not emotion.
+    </p>
+    <p style="color:#4CA6A8;font-weight:600;">
+      📂 <strong>Pro Tip:</strong> Think like a librarian — every piece of paper should have a place, purpose, and label.
+      Chaos kills credibility.
+    </p>
 
-  <!-- Step 5 -->
-  <h3 style="color:#D4A017;margin-top:50px;">5️⃣ Practice the Hearing</h3>
-  <p style="color:#f8f8f8;">
-    Court is not the time to “wing it.” Rehearse your presentation like a professional.
-    Write out your main points, your <strong>requests</strong>, <strong>objections</strong>, and <strong>responses</strong> to likely counterarguments.
-  </p>
-  <p style="color:#f8f8f8;">
-    Stand in front of a mirror or record yourself. Watch your tone, pacing, and posture.
-    You’re not acting — you’re advocating. Calm confidence beats courtroom theatrics every time.
-  </p>
-  <p style="color:#f8f8f8;">
-    Also, practice staying composed. Judges notice demeanor. If you lose your temper, you lose the room.
-  </p>
-  <p style="color:#4CA6A8;font-weight:600;">
-    🎤 <strong>Pro Tip:</strong> Knowing what to say is half the battle. The other half is knowing when to stop talking.
-  </p>
+    <!-- Step 5 -->
+    <h3 style="color:#D4A017;margin-top:50px;">5️⃣ Practice the Hearing</h3>
+    <p style="color:#f8f8f8;">
+      Court is not the time to “wing it.” Rehearse your presentation like a professional.
+      Write out your main points, your <strong>requests</strong>, <strong>objections</strong>, and <strong>responses</strong> to likely counterarguments.
+    </p>
+    <p style="color:#f8f8f8;">
+      Stand in front of a mirror or record yourself. Watch your tone, pacing, and posture.
+      You’re not acting — you’re advocating. Calm confidence beats courtroom theatrics every time.
+    </p>
+    <p style="color:#f8f8f8;">
+      Also, practice staying composed. Judges notice demeanor. If you lose your temper, you lose the room.
+    </p>
+    <p style="color:#4CA6A8;font-weight:600;">
+      🎤 <strong>Pro Tip:</strong> Knowing what to say is half the battle. The other half is knowing when to stop talking.
+    </p>
 
-  <hr style="margin:60px 0;border:0;border-top:1px solid rgba(255,255,255,.1);" />
-  <p style="text-align:center;color:#D4A017;font-weight:700;font-size:1.25rem;">
-    Representing yourself doesn’t mean going alone — it means going <strong>prepared</strong>.<br>
-  <br>
-  </p>
-</section>
+    <hr style="margin:60px 0;border:0;border-top:1px solid rgba(255,255,255,.1);" />
+    <p style="text-align:center;color:#D4A017;font-weight:700;font-size:1.25rem;">
+      Representing yourself doesn’t mean going alone — it means going <strong>prepared</strong>.<br>
+      <br>
+    </p>
+  </section>
 
   <!-- RESOURCES -->
-  <section class="section">
+  <section class="section" aria-labelledby="resources">
     <div class="wrap grid-2">
       <div class="panel">
-        <h2>Free & Trusted Resources</h2>
+        <h2 id="resources">Free & Trusted Resources</h2>
         <ul>
           <li><a href="faq.html" style="color:var(--gold);font-weight:700;">Legal FAQs — Common Court Questions</a></li>
-          <li><a href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" style="color:var(--red);font-weight:700;">🎓 How to Win in Court Without a Lawyer — Step-by-Step Course</a></li>
+          <li><a href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="noopener" style="color:var(--red);font-weight:700;">🎓 How to Win in Court Without a Lawyer — Step-by-Step Course</a></li>
           <li><a href="index.html" style="color:var(--teal);font-weight:700;">Return to LearnWithOddlaw.com — Home</a></li>
         </ul>
       </div>
@@ -300,14 +294,14 @@
         <h2>How to Use This Page</h2>
         <p>1) Download the handbook. 2) Read your local rules. 3) Draft, file, and serve correctly. 4) Organize admissible evidence. 5) Rehearse the hearing. The guide and course together create a practical roadmap from confusion to confidence.</p>
         <p class="center" style="margin-top:var(--space-2);">
-          <a class="btn-red btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener">⚖️ Access the Full Course →</a>
+          <a class="btn-red btn" href="https://www.howtowinincourt.com/frameset.cfm?mTitle=StartHere&refercode=LT0031" target="_blank" rel="nofollow noopener" aria-label="Access the How to Win in Court course">⚖️ Access the Full Course →</a>
         </p>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER (matches homepage links/style) -->
-  <footer>
+  <!-- FOOTER -->
+  <footer role="contentinfo">
     <div class="wrap">
       <p style="color:#ccc;">© 2025 Tanya Lawson · <strong style="color:#eee;">Mr. Oddlaw — Law, Unfiltered.</strong></p>
       <p class="disclosure">
@@ -330,151 +324,123 @@
       </p>
     </div>
   </footer>
-<!-- ===========================
- STRUCTURED DATA — REPRESENT YOURSELF PAGE
- Includes: Breadcrumb + FAQ + HowTo
- Optimized for LearnWithOddlaw.com
- Author: Tanya Lawson | Updated 2025-11-06
-=========================== -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
 
-    /* ======================
-       BREADCRUMB SCHEMA
-    ======================= */
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
+  <!-- ===========================
+       STRUCTURED DATA — BREADCRUMB + FAQ + HOWTO
+       =========================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Learn With Mr. Oddlaw",
+            "item": "https://learnwithoddlaw.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Represent Yourself in Court",
+            "item": "https://learnwithoddlaw.com/represent-yourself.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I legally represent myself in court?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Every citizen has the constitutional right to self-representation, often called appearing pro se. You will be held to the same procedural standards as licensed attorneys."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do most pro se litigants lose?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most pro se litigants lose due to procedural errors — missed deadlines, improper filing, or inadmissible evidence — not because their cases lack merit. The system rewards those who know the process."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I learn courtroom procedure?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The 'How to Win in Court' course by Dr. Frederick Graves teaches step-by-step courtroom procedure using real case examples, written in plain English so anyone can follow and apply it."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "Five Steps to Represent Yourself in Court",
+        "description": "A complete five-step process explaining how to represent yourself (pro se) in court — from learning the rules to practicing your hearing.",
+        "image": "https://learnwithoddlaw.com/images/oddlaw-prose-handbook-offer.png",
+        "totalTime": "P7D",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "0"
+        },
+        "supply": [
+          {"@type": "HowToSupply","name": "Pro Se Handbook PDF"},
+          {"@type": "HowToSupply","name": "Court procedural rules (state or federal)"}
+        ],
+        "tool": [
+          {"@type": "HowToTool","name": "Computer and printer"},
+          {"@type": "HowToTool","name": "Court forms or templates"}
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Understand the Rules",
+            "text": "Every courtroom has its own playbook — the Rules of Procedure and the Rules of Evidence. Read your jurisdiction’s sections on motions, service, and deadlines to navigate with confidence."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Prepare Documents",
+            "text": "Write your complaint, motion, or response using numbered paragraphs, plain English headings, and proper case captions. Avoid emotional language; precision earns respect."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "File and Serve Properly",
+            "text": "Submit your documents to the court clerk and serve all parties correctly within the required time limits. Always confirm filing dates and keep proof of service."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Organize Evidence",
+            "text": "Gather all exhibits, witness lists, and proof that meet the Rules of Evidence. Label them clearly so the judge can easily follow your narrative through documentation."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Practice the Hearing",
+            "text": "Rehearse what you’ll say in court, when to object, and how to stay composed under pressure. Confidence and clarity strengthen your presence before the judge."
+          }
+        ],
+        "publisher": {
+          "@type": "Organization",
           "name": "Learn With Mr. Oddlaw",
-          "item": "https://learnwithoddlaw.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Represent Yourself in Court",
-          "item": "https://learnwithoddlaw.com/represent-yourself.html"
-        }
-      ]
-    },
-
-    /* ======================
-       FAQ SCHEMA
-    ======================= */
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Can I legally represent myself in court?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Every citizen has the constitutional right to self-representation, often called appearing pro se. You will be held to the same procedural standards as licensed attorneys."
+          "url": "https://learnwithoddlaw.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://learnwithoddlaw.com/images/social-preview3.png"
           }
         },
-        {
-          "@type": "Question",
-          "name": "Why do most pro se litigants lose?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most pro se litigants lose due to procedural errors — missed deadlines, improper filing, or inadmissible evidence — not because their cases lack merit. The system rewards those who know the process."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How can I learn courtroom procedure?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The 'How to Win in Court' course by Dr. Frederick Graves teaches step-by-step courtroom procedure using real case examples, written in plain English so anyone can follow and apply it."
-          }
+        "author": {
+          "@type": "Person",
+          "name": "Tanya Lawson",
+          "url": "https://learnwithoddlaw.com"
         }
-      ]
-    },
-
-    /* ======================
-       HOWTO SCHEMA
-    ======================= */
-    {
-      "@type": "HowTo",
-      "name": "Five Steps to Represent Yourself in Court",
-      "description": "A complete five-step process explaining how to represent yourself (pro se) in court — from learning the rules to practicing your hearing.",
-      "image": "https://learnwithoddlaw.com/images/oddlaw-prose-handbook-offer.png",
-      "totalTime": "P7D",
-      "estimatedCost": {
-        "@type": "MonetaryAmount",
-        "currency": "USD",
-        "value": "0"
-      },
-      "supply": [
-        {
-          "@type": "HowToSupply",
-          "name": "Pro Se Handbook PDF"
-        },
-        {
-          "@type": "HowToSupply",
-          "name": "Court procedural rules (state or federal)"
-        }
-      ],
-      "tool": [
-        {
-          "@type": "HowToTool",
-          "name": "Computer and printer"
-        },
-        {
-          "@type": "HowToTool",
-          "name": "Court forms or templates"
-        }
-      ],
-      "step": [
-        {
-          "@type": "HowToStep",
-          "name": "Understand the Rules",
-          "text": "Every courtroom has its own playbook — the Rules of Procedure and the Rules of Evidence. Read your jurisdiction’s sections on motions, service, and deadlines to navigate with confidence."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Prepare Documents",
-          "text": "Write your complaint, motion, or response using numbered paragraphs, plain English headings, and proper case captions. Avoid emotional language; precision earns respect."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "File and Serve Properly",
-          "text": "Submit your documents to the court clerk and serve all parties correctly within the required time limits. Always confirm filing dates and keep proof of service."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Organize Evidence",
-          "text": "Gather all exhibits, witness lists, and proof that meet the Rules of Evidence. Label them clearly so the judge can easily follow your narrative through documentation."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Practice the Hearing",
-          "text": "Rehearse what you’ll say in court, when to object, and how to stay composed under pressure. Confidence and clarity strengthen your presence before the judge."
-        }
-      ],
-      "publisher": {
-        "@type": "Organization",
-        "name": "Learn With Mr. Oddlaw",
-        "url": "https://learnwithoddlaw.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://learnwithoddlaw.com/images/social-preview3.png"
-        }
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Tanya Lawson",
-        "url": "https://learnwithoddlaw.com"
       }
-    }
-  ]
-}
-</script>
+    ]
+  }
+  </script>
 </body>
 </html>
-
-
