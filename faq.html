@@ -1,6 +1,6 @@
 <!-- ============================================================
  LEARN WITH ODDLAW — LEGAL FAQ PAGE (Grouped & Expanded)
- Author: Tanya Lawson | Version 2.0 | Updated 2025-11-06
+ Author: Tanya Lawson | Version 2.0 | Updated 2025-11-07
 =============================================================== -->
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +11,8 @@
 
   <meta name="description" content="The complete, practical FAQ for self-represented litigants: pro se basics, court expectations, deadlines, motions, evidence, witnesses, appeals, and resources. Clear answers in plain English, plus pro tips for winning with paperwork and procedure." />
   <meta name="keywords" content="represent yourself in court, pro se, legal self-help, motions, evidence, deadlines, how to file, appeals, Learn With Oddlaw, Mr. Oddlaw, Tanya Lawson" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="author" content="Tanya Lawson" />
   <link rel="canonical" href="https://learnwithoddlaw.com/faq.html" />
 
   <!-- Social Preview -->
@@ -19,6 +21,11 @@
   <meta property="og:image" content="https://learnwithoddlaw.com/images/social-preview.jpg" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://learnwithoddlaw.com/faq.html" />
+  <meta property="og:site_name" content="Learn With Mr. Oddlaw" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Legal FAQs for Pro Se Litigants — Learn With Mr. Oddlaw" />
+  <meta name="twitter:description" content="Everything you need to stand your ground in court: pro se basics, filings, deadlines, evidence, objections, motions, appeals, and trusted resources." />
+  <meta name="twitter:image" content="https://learnwithoddlaw.com/images/social-preview.jpg" />
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
@@ -132,7 +139,7 @@
     }
     summary::-webkit-details-marker { display:none; }
     .caret {
-      width:10px;height:10px;border-right:2px solid var(--gold);border-bottom:2px solid(var(--gold));
+      width:10px;height:10px;border-right:2px solid var(--gold);border-bottom:2px solid var(--gold);
       transform:rotate(-45deg);transition:transform .25s ease;
     }
     details[open] .caret { transform:rotate(45deg); }
@@ -178,7 +185,7 @@
   <div class="topbar">
     <div class="topbar-inner">
       <div class="brand">Learn With Mr. Oddlaw</div>
-      <div class="crumb"><a href="index.html">← Back to Home</a></div>
+      <div class="crumb"><a href="index.html" aria-label="Back to Learn With Mr. Oddlaw home">← Back to Home</a></div>
     </div>
   </div>
 
@@ -838,7 +845,7 @@
       Bar Number _______<br>
       Law Office Address<br>
       City, State ZIP<br>
-      (555) 987-6543
+      (555) 987-6543 
       </em>
     </p>
 
@@ -1530,207 +1537,230 @@
     </div>
   </footer>
 
-  <!-- JSON-LD Breadcrumbs -->
+  <!-- JSON-LD: Merged @graph (WebSite, WebPage, BreadcrumbList, FAQPage) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type": "ListItem","position": 1,"name": "Learn With Mr. Oddlaw","item": "https://learnwithoddlaw.com/"},
-      {"@type": "ListItem","position": 2,"name": "Legal FAQs","item": "https://learnwithoddlaw.com/faq.html"}
-    ]
-  }
-  </script>
-
-  <!-- JSON-LD FAQ Schema (Grouped; each question appears once) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "Do I have to hire a lawyer, or can I represent myself?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You have the right to represent yourself in most civil cases. The court will hold you to the same rules lawyers follow: formatting, deadlines, service, and evidence. For complex or high-stakes matters (custody, immigration, serious criminal exposure, parental kidnapping), consider consulting an attorney or seeking limited-scope help known as hybrid help."
+        "@type": "WebSite",
+        "@id": "https://learnwithoddlaw.com/#website",
+        "url": "https://learnwithoddlaw.com/",
+        "name": "Learn With Mr. Oddlaw",
+        "publisher": {
+          "@type": "Person",
+          "name": "Tanya Lawson"
         }
       },
       {
-        "@type": "Question",
-        "name": "What is Hybrid Help or limited-scope representation?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Hybrid Help—also called limited-scope representation or unbundled legal services—is a flexible middle ground for self-represented litigants. You remain pro se but hire a licensed attorney for specific tasks such as reviewing documents, preparing motions, coaching for hearings, or appearing in court for one critical event. It lets you borrow expert help without paying for full representation, reducing mistakes in complex or high-stakes cases involving housing, children, immigration, or liberty."
-      }
+        "@type": "WebPage",
+        "@id": "https://learnwithoddlaw.com/faq.html#webpage",
+        "url": "https://learnwithoddlaw.com/faq.html",
+        "name": "Legal FAQs (Pro Se, Evidence, Motions, Appeals) — Learn With Mr. Oddlaw",
+        "description": "The complete, practical FAQ for self-represented litigants: pro se basics, court expectations, deadlines, motions, evidence, witnesses, appeals, and resources.",
+        "isPartOf": {"@id": "https://learnwithoddlaw.com/#website"},
+        "inLanguage": "en-US",
+        "datePublished": "2025-11-07",
+        "dateModified": "2025-11-07",
+        "author": {"@type": "Person","name": "Tanya Lawson"}
       },
       {
-        "@type": "Question",
-        "name": "What does “pro se” mean, and what does it involve?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Pro se means “for oneself.” You handle research, drafting, filing, serving, evidence, hearings, objections, and possibly appeals. It’s work—but with discipline and the rules, it’s doable."
-        }
+        "@type": "BreadcrumbList",
+        "@id": "https://learnwithoddlaw.com/faq.html#breadcrumb",
+        "itemListElement": [
+          {"@type": "ListItem","position": 1,"name": "Learn With Mr. Oddlaw","item": "https://learnwithoddlaw.com/"},
+          {"@type": "ListItem","position": 2,"name": "Legal FAQs","item": "https://learnwithoddlaw.com/faq.html"}
+        ]
       },
       {
-        "@type": "Question",
-        "name": "What are the risks and advantages of self-representation?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Advantages: Save fees, keep control, learn durable skills. Risks: You’re responsible for every rule; mistakes—missed deadlines, bad service, improper evidence—can sink a winning case. Courts won’t coach you."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What will the judge expect from a self-represented litigant?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Basic competency: know your purpose, follow deadlines, file proper papers, serve correctly, present admissible evidence, and behave professionally. Precision and clarity earn respect."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How will the court treat me if I am not a lawyer?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Courts must treat you fairly but will not relax the rules. Some judges are patient; some are strict. Proper forms, punctuality, and professional tone build credibility."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What court procedures and legal rules do I need to know?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Learn your court’s Rules of Civil Procedure, Rules of Evidence, local rules, standing orders, and scheduling orders. Focus on filing formats, service methods, motion practice, discovery basics, and hearing procedures."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is a motion, and why is it important?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A motion is a written request asking the judge to take a specific action (dismiss, compel, extend time, exclude evidence). Motions steer the case and build a clean record for appeal."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I write and file a complaint, motion, or other legal documents?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Use proper captioning, numbered paragraphs, plain-English headings, and cite the rules you rely on. File with the clerk per local rules (e-filing or in person) and serve the other side using an approved method. Keep stamped copies and proofs of service."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What forms and documents must I file to begin my case?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Typically file a Complaint/Petition, Civil Cover Sheet (if required), and Summons for each defendant. Some courts require case information statements or fee waivers. The complaint should identify the parties, facts, legal claims, and relief requested."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can someone at the court help me or answer my questions?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Court staff can explain procedures and point you to forms but cannot give legal advice or tell you what to argue. Many courts have self-help centers and clinics."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Where can I get help or resources for filling out and filing paperwork?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Use your court’s self-help center, law library, and official forms. Legal aid and limited-scope attorneys can review documents. Online resources and trusted courses can help you learn procedure."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What deadlines do I need to meet, and how do I track them?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Deadlines govern answers, motions, discovery, disclosures, and appeals. Missing one can end your case. Use a calendar with reminders and confirm time-counting rules (business vs. calendar days; extra days for mail)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "If the other side has a lawyer, what challenges might I face?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Expect fast deadlines, dense filings, and evidence challenges. Opposing counsel cannot advise you. Your best response is timely, precise, rule-based paperwork and clean records."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I gather, organize, and present evidence for court?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Collect documents, photos, records, messages, and witness statements. Authenticate them, mark exhibits, create an index, and follow Rules of Evidence for relevance, hearsay exceptions, and foundation."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How can I prepare to question witnesses (including myself)?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Write clear questions in sequence. Use open-ended questions for friendly witnesses and leading questions for hostile ones. Practice objections and transitions. If you testify, support your narrative with exhibits."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What should I do if I don’t understand something in court?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Respectfully ask the judge for procedural clarification and confirm what the court needs next. Do not argue while seeking clarification."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I consult an attorney or get limited help if I represent myself?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Many jurisdictions allow limited-scope representation (unbundled services) so a lawyer can review filings or coach you while you remain pro se."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What happens if I lose my case or need to appeal?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You may have a right to appeal, but timelines are short and rules are strict. Appeals focus on legal error in the record. Consider consulting an appellate attorney even if you stay pro se."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What kind of relief or outcomes can I ask the court for?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Possible relief includes money damages, injunctions, declaratory judgments, orders to compel, sanctions, fees/costs, or specific performance. State your requested relief clearly in the complaint and in each motion."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What should I bring to court, and how do I organize materials?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Bring copies of your filings, indexed exhibits, a notepad, pens, a short outline, and a calendar. Keep everything in a labeled binder or accordion file so you can find it quickly."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What do I need to do before my hearing or trial?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Review the rules, confirm the time and courtroom, prep objections, rehearse openings/closings and exhibit foundations, arrive early, and maintain professional demeanor."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What does the course teach and why does Oddlaw recommend it?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The course teaches a practical method—allege the facts, prove the facts, move the judge—in plain English. Oddlaw recommends learning the rules before you need them because most losses are procedural, not moral."
-        }
+        "@type": "FAQPage",
+        "@id": "https://learnwithoddlaw.com/faq.html#faqpage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do I have to hire a lawyer, or can I represent myself?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You have the right to represent yourself in most civil cases. The court will hold you to the same rules lawyers follow: formatting, deadlines, service, and evidence. For complex or high-stakes matters (custody, immigration, serious criminal exposure, parental kidnapping), consider consulting an attorney or seeking limited-scope help known as hybrid help."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Hybrid Help or limited-scope representation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hybrid Help—also called limited-scope representation or unbundled legal services—is a flexible middle ground for self-represented litigants. You remain pro se but hire a licensed attorney for specific tasks such as reviewing documents, preparing motions, coaching for hearings, or appearing in court for one critical event. It lets you borrow expert help without paying for full representation, reducing mistakes in complex or high-stakes cases involving housing, children, immigration, or liberty."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does “pro se” mean, and what does it involve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pro se means “for oneself.” You handle research, drafting, filing, serving, evidence, hearings, objections, and possibly appeals. It’s work—but with discipline and the rules, it’s doable."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the risks and advantages of self-representation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Advantages: Save fees, keep control, learn durable skills. Risks: You’re responsible for every rule; mistakes—missed deadlines, bad service, improper evidence—can sink a winning case. Courts won’t coach you."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What will the judge expect from a self-represented litigant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Basic competency: know your purpose, follow deadlines, file proper papers, serve correctly, present admissible evidence, and behave professionally. Precision and clarity earn respect."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How will the court treat me if I am not a lawyer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Courts must treat you fairly but will not relax the rules. Some judges are patient; some are strict. Proper forms, punctuality, and professional tone build credibility."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What court procedures and legal rules do I need to know?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Learn your court’s Rules of Civil Procedure, Rules of Evidence, local rules, standing orders, and scheduling orders. Focus on filing formats, service methods, motion practice, discovery basics, and hearing procedures."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a motion, and why is it important?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A motion is a written request asking the judge to take a specific action (dismiss, compel, extend time, exclude evidence). Motions steer the case and build a clean record for appeal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I write and file a complaint, motion, or other legal documents?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use proper captioning, numbered paragraphs, plain-English headings, and cite the rules you rely on. File with the clerk per local rules (e-filing or in person) and serve the other side using an approved method. Keep stamped copies and proofs of service."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What forms and documents must I file to begin my case?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Typically file a Complaint/Petition, Civil Cover Sheet (if required), and Summons for each defendant. Some courts require case information statements or fee waivers. The complaint should identify the parties, facts, legal claims, and relief requested."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can someone at the court help me or answer my questions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Court staff can explain procedures and point you to forms but cannot give legal advice or tell you what to argue. Many courts have self-help centers and clinics."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where can I get help or resources for filling out and filing paperwork?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use your court’s self-help center, law library, and official forms. Legal aid and limited-scope attorneys can review documents. Online resources and trusted courses can help you learn procedure."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What deadlines do I need to meet, and how do I track them?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Deadlines govern answers, motions, discovery, disclosures, and appeals. Missing one can end your case. Use a calendar with reminders and confirm time-counting rules (business vs. calendar days; extra days for mail)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "If the other side has a lawyer, what challenges might I face?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Expect fast deadlines, dense filings, and evidence challenges. Opposing counsel cannot advise you. Your best response is timely, precise, rule-based paperwork and clean records."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I gather, organize, and present evidence for court?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Collect documents, photos, records, messages, and witness statements. Authenticate them, mark exhibits, create an index, and follow Rules of Evidence for relevance, hearsay exceptions, and foundation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I prepare to question witnesses (including myself)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Write clear questions in sequence. Use open-ended questions for friendly witnesses and leading questions for hostile ones. Practice objections and transitions. If you testify, support your narrative with exhibits."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I do if I don’t understand something in court?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Respectfully ask the judge for procedural clarification and confirm what the court needs next. Do not argue while seeking clarification."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I consult an attorney or get limited help if I represent myself?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Many jurisdictions allow limited-scope representation (unbundled services) so a lawyer can review filings or coach you while you remain pro se."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if I lose my case or need to appeal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You may have a right to appeal, but timelines are short and rules are strict. Appeals focus on legal error in the record. Consider consulting an appellate attorney even if you stay pro se."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What kind of relief or outcomes can I ask the court for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Possible relief includes money damages, injunctions, declaratory judgments, orders to compel, sanctions, fees/costs, or specific performance. State your requested relief clearly in the complaint and in each motion."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I bring to court, and how do I organize materials?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bring copies of your filings, indexed exhibits, a notepad, pens, a short outline, and a calendar. Keep everything in a labeled binder or accordion file so you can find it quickly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What do I need to do before my hearing or trial?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Review the rules, confirm the time and courtroom, prep objections, rehearse openings/closings and exhibit foundations, arrive early, and maintain professional demeanor."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does the course teach and why does Oddlaw recommend it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The course teaches a practical method—allege the facts, prove the facts, move the judge—in plain English. Oddlaw recommends learning the rules before you need them because most losses are procedural, not moral."
+            }
+          }
+        ]
       }
     ]
   }
