@@ -11,17 +11,24 @@
 
   <link rel="canonical" href="https://learnwithoddlaw.com/oddlaw-reacts-prose-fails.html" />
 
-  <!-- Social -->
+  <!-- ==========================
+       SOCIAL PREVIEW / SHARE
+  =========================== -->
   <meta property="og:title" content="Oddlaw Reacts: Pro Se Fails — Learn the Rules" />
   <meta property="og:description" content="Watch Mr. Oddlaw break down real courtroom mistakes and how to avoid them." />
   <meta property="og:type" content="video.other" />
   <meta property="og:image" content="https://learnwithoddlaw.com/images/oddlaw-reacts-thumb.jpg" />
   <meta property="og:url" content="https://learnwithoddlaw.com/oddlaw-reacts-prose-fails.html" />
+  <meta property="og:video" content="https://learnwithoddlaw.com/videos/oddlaw-reacts-prose-fails.mp4" />
+  <meta property="og:video:type" content="video/mp4" />
 
   <meta name="twitter:card" content="player" />
   <meta name="twitter:title" content="Oddlaw Reacts: Pro Se Fails" />
   <meta name="twitter:description" content="The mistakes most people make in court — and how to avoid them." />
   <meta name="twitter:image" content="https://learnwithoddlaw.com/images/oddlaw-reacts-thumb.jpg" />
+  <meta name="twitter:player" content="https://learnwithoddlaw.com/oddlaw-reacts-prose-fails.html" />
+  <meta name="twitter:player:stream" content="https://learnwithoddlaw.com/videos/oddlaw-reacts-prose-fails.mp4" />
+  <meta name="twitter:player:stream:content_type" content="video/mp4" />
 
   <style>
     body {
@@ -45,17 +52,20 @@
       padding:0 20px;
     }
     .video-container {
-      margin:35px auto;
+      position:relative;
       max-width:700px;
-      border-radius:12px;
+      margin:35px auto;
+      padding-bottom:56.25%;
+      height:0;
+      border-radius:16px;
       overflow:hidden;
-      border:1px solid rgba(212,160,23,0.35);
+      border:2px solid rgba(212,160,23,0.35);
       box-shadow:0 12px 35px rgba(0,0,0,0.45);
     }
-    video {
-      width:100%;
-      display:block;
-      background:#000;
+    iframe {
+      position:absolute;
+      top:0;left:0;width:100%;height:100%;
+      border:0;border-radius:16px;
     }
     .back-link {
       display:inline-block;
@@ -67,7 +77,14 @@
     .back-link:hover { color:#D4A017; }
   </style>
 
-  <!-- VIDEOOBJECT SCHEMA (REQUIRED FOR INDEXING) -->
+  <!-- =========================================
+       VIDEOOBJECT SCHEMA (GOOGLE INDEXING)
+       Uses:
+       - Direct MP4 URL (required)
+       - Thumbnail URL
+       - Upload date
+       - Duration (PT1M56S)
+  ========================================== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org/",
@@ -78,7 +95,7 @@
     "uploadDate": "2025-01-01",
     "contentUrl": "https://learnwithoddlaw.com/videos/oddlaw-reacts-prose-fails.mp4",
     "embedUrl": "https://learnwithoddlaw.com/oddlaw-reacts-prose-fails.html",
-    "duration": "PT22S",
+    "duration": "PT1M56S",
     "publisher": {
       "@type": "Organization",
       "name": "Learn With Mr. Oddlaw",
@@ -102,11 +119,23 @@
       and learn how to avoid them using simple, courtroom-approved rules.
     </p>
 
+    <!-- ======================
+         ADILO PLAYER EMBED
+         (FULLY RESPONSIVE)
+    ======================= -->
     <div class="video-container">
-      <video controls playsinline preload="metadata" poster="https://learnwithoddlaw.com/images/oddlaw-reacts-thumb.jpg">
-        <source src="https://learnwithoddlaw.com/videos/oddlaw-reacts-prose-fails.mp4" type="video/mp4">
-      </video>
+      <iframe
+        src="https://adilo.bigcommand.com/watch/yUC6sFks"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+      </iframe>
     </div>
+
+    <!-- Hidden direct MP4 reference for Google's video indexer -->
+    <link rel="preload" href="https://learnwithoddlaw.com/videos/oddlaw-reacts-prose-fails.mp4" as="video">
+    <a href="https://learnwithoddlaw.com/videos/oddlaw-reacts-prose-fails.mp4" style="display:none;">
+      Direct MP4 File
+    </a>
 
     <a class="back-link" href="index.html">← Back to Home</a>
   </div>
