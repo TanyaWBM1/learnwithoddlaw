@@ -1,5 +1,9 @@
 User-agent: *
 Allow: /
+Sitemap: https://learnwithoddlaw.com/sitemap.xml
+Sitemap: https://learnwithoddlaw.com/sitemap-pages.xml
+Sitemap: https://learnwithoddlaw.com/sitemap-images.xml
+Sitemap: https://learnwithoddlaw.com/sitemap-video.xml
 
 # Block GitHub system artifacts
 Disallow: /README
