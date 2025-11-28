@@ -1,9 +1,23 @@
 User-agent: *
 Allow: /
 
-# Block GitHub system files
+# Block GitHub system artifacts
 Disallow: /README
 Disallow: /LICENSE
+Disallow: /CNAME
+Disallow: /drafts/
+Disallow: /*.bak$
+Disallow: /*.tmp$
+Disallow: /*.draft$
 
-# Sitemap location
+# Allow public assets
+Allow: /images/
+Allow: /oddlaw_animation.mp4
+
+# Primary sitemap index (master file)
 Sitemap: https://learnwithoddlaw.com/sitemap.xml
+
+# Notes
+# Learn With Mr. OddLaw — Legal empowerment for self-represented litigants.
+# Author: Tanya M. Lawson
+# Updated: 2025-11-07
