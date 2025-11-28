@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+>
+
+  <url>
+    <loc>https://learnwithoddlaw.com/oddlaw_animation.mp4</loc>
+    <video:video>
+      <video:content_loc>https://learnwithoddlaw.com/oddlaw_animation.mp4</video:content_loc>
+      <video:thumbnail_loc>https://learnwithoddlaw.com/images/social-preview3.png</video:thumbnail_loc>
+      <video:title>Learn With Mr. Oddlaw — Intro Animation</video:title>
+      <video:description>Legal empowerment intro video featuring Mr. Oddlaw.</video:description>
+    </video:video>
+  </url>
+
+</urlset>
