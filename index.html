@@ -466,11 +466,6 @@ footer .disclosure {
     animation: pollPulse 6s ease-in-out infinite;
     background: rgba(255,255,255,0.02);
 }
-
-/* ADD THIS RIGHT HERE */
-#poll-hero .poll-box {
-    margin-bottom: 60px;  /* Increase space under the poll */
-}
    
 /* Poll Heading */
 .poll-heading {
@@ -544,6 +539,31 @@ footer .disclosure {
 #prose-problem.section,
 section#prose-problem {
     padding-top: 20px !important;
+}
+
+/* --------------------------------------------------
+   CUSTOM SPACING — Poll #1 and Poll #2 overrides
+-------------------------------------------------- */
+
+/* POLL #1 — spacing BELOW Poll #1 */
+#poll-hero {
+    margin-bottom: 50px !important;   /* More space under Poll #1 */
+}
+
+#poll-hero .poll-box {
+    margin-bottom: 40px !important;   /* Space before Pro Se Problem */
+}
+
+/* POLL #2 — spacing ABOVE Poll #2 */
+#poll-prose {
+    margin-top: 70px !important;      /* Big spacing ABOVE Poll #2 */
+    margin-bottom: 40px !important;   /* Natural space below */
+    padding-top: 0 !important;
+}
+
+/* optional: increase space above the divider → Poll #2 */
+.divider + #poll-prose {
+    margin-top: 80px !important;
 }
     
 </style>
