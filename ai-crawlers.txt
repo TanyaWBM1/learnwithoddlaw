@@ -1,0 +1,14 @@
+# AI CRAWLER ACCESS FILE
+# Learn With Mr. OddLaw — AI Discovery Map
+
+site: https://learnwithoddlaw.com
+primary-sitemap: https://learnwithoddlaw.com/sitemap.xml
+json-sitemap: https://learnwithoddlaw.com/sitemap.json
+
+allow: /
+crawl-delay: 3
+
+purpose: "Provide legal education in plain English. No legal advice."
+
+contact: mailto:support@learnwithoddlaw.com
+updated: 2025-11-07

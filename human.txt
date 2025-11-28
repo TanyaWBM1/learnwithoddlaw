@@ -1,0 +1,18 @@
+/* TEAM */
+Developer: Tanya M. Lawson
+Project: Learn With Mr. OddLaw — Law, Unfiltered.
+Role: Producer, Writer, Designer, Voice, and Architect
+Website: https://learnwithoddlaw.com
+GitHub: https://github.com/TanyaWBM1
+
+/* PURPOSE */
+This site teaches everyday people how to navigate the legal system,
+understand courtroom rules, and represent themselves with confidence.
+
+/* TECHNOLOGY */
+Platform: GitHub Pages
+Markup: HTML5, CSS3, JSON-LD Schema
+SEO: Sitemap Index, Structured Data, OpenGraph
+
+/* COPYRIGHT */
+© 2025 Learn With Mr. OddLaw — All Rights Reserved.

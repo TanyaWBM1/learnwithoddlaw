@@ -1,0 +1,9 @@
+Contact: mailto:support@learnwithoddlaw.com
+Expires: 2026-12-31T23:59:00.000Z
+Preferred-Languages: en
+Canonical: https://learnwithoddlaw.com/security.txt
+
+# Notes
+This domain does not handle sensitive customer data.
+Report vulnerabilities responsibly via email.
+No bug bounties at this time.
