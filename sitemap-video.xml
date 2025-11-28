@@ -1,43 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url>
+  <loc>https://learnwithoddlaw.com/oddlaw-reacts-prose-fails.html</loc>
 
-  <!-- Homepage Video -->
-  <url>
-    <loc>https://learnwithoddlaw.com/</loc>
-    <video:video>
-      <video:title>Oddlaw Reacts: Pro Se Fails (Homepage Feature)</video:title>
-      <video:description>
-        A short preview clip featuring Mr. Oddlaw breaking down common pro se mistakes and showing how legal procedure actually works.
-      </video:description>
-      <video:thumbnail_loc>
-        https://learnwithoddlaw.com/images/oddlaw-reacts-thumb.jpg
-      </video:thumbnail_loc>
-      <video:content_loc>
-        https://learnwithoddlaw.com/videos/oddlaw-reacts-prose-fails.mp4
-      </video:content_loc>
-      <video:duration>22</video:duration>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-  </url>
+  <video:video>
+    <video:title>Oddlaw Reacts: Pro Se Fails</video:title>
+    <video:description>Mr. Oddlaw reacts to common courtroom mistakes made by pro se litigants — and shows how to avoid them.</video:description>
 
-  <!-- Dedicated Watch Page Video -->
-  <url>
-    <loc>https://learnwithoddlaw.com/oddlaw-reacts-prose-fails.html</loc>
-    <video:video>
-      <video:title>Oddlaw Reacts: Pro Se Fails</video:title>
-      <video:description>
-        Mr. Oddlaw reacts to common pro se mistakes — missed deadlines, bad motions, poor evidence handling, and courtroom missteps — and explains how to fix them.
-      </video:description>
-      <video:thumbnail_loc>
-        https://learnwithoddlaw.com/images/oddlaw-reacts-thumb.jpg
-      </video:thumbnail_loc>
-      <video:content_loc>
-        https://learnwithoddlaw.com/videos/oddlaw-reacts-prose-fails.mp4
-      </video:content_loc>
-      <video:duration>22</video:duration>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-  </url>
+    <video:thumbnail_loc>
+      https://learnwithoddlaw.com/images/oddlaw-reacts-thumb.jpg
+    </video:thumbnail_loc>
 
-</urlset>
+    <video:content_loc>
+      https://adilo.bigcommand.com/bcfc47e7-07b7-4fce-98c1-71aff6636946.mp4
+    </video:content_loc>
+
+    <video:player_loc allow_embed="yes">
+      https://adilo.bigcommand.com/watch/yUC6sFks
+    </video:player_loc>
+
+    <video:duration>116</video:duration>
+    <video:family_friendly>yes</video:family_friendly>
+  </video:video>
+</url>
