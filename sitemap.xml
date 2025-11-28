@@ -1,173 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset 
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
->
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- ========================= -->
-  <!-- Main Pages                -->
-  <!-- ========================= -->
-
-  <url>
-    <loc>https://learnwithoddlaw.com/</loc>
+  <sitemap>
+    <loc>https://learnwithoddlaw.com/sitemap-pages.xml</loc>
     <lastmod>2025-11-07</lastmod>
-    <priority>1.0</priority>
-  </url>
+  </sitemap>
 
-  <url>
-    <loc>https://learnwithoddlaw.com/represent-yourself.html</loc>
+  <sitemap>
+    <loc>https://learnwithoddlaw.com/sitemap-images.xml</loc>
     <lastmod>2025-11-07</lastmod>
-    <priority>0.95</priority>
-  </url>
+  </sitemap>
 
-  <url>
-    <loc>https://learnwithoddlaw.com/faq.html</loc>
+  <sitemap>
+    <loc>https://learnwithoddlaw.com/sitemap-video.xml</loc>
     <lastmod>2025-11-07</lastmod>
-    <priority>0.95</priority>
-  </url>
+  </sitemap>
 
-  <url>
-    <loc>https://learnwithoddlaw.com/privacy-policy.html</loc>
-    <lastmod>2025-11-07</lastmod>
-    <priority>0.7</priority>
-  </url>
+</sitemapindex>
 
-  <url>
-    <loc>https://learnwithoddlaw.com/terms-of-use.html</loc>
-    <lastmod>2025-11-07</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://learnwithoddlaw.com/data-deletion.html</loc>
-    <lastmod>2025-11-07</lastmod>
-    <priority>0.6</priority>
-  </url>
-
-
-  <!-- ========================= -->
-  <!-- Images                    -->
-  <!-- ========================= -->
-
-  <url>
-    <loc>https://learnwithoddlaw.com/images/facebook%20icon.png</loc>
-    <image:image>
-      <image:loc>https://learnwithoddlaw.com/images/facebook%20icon.png</image:loc>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://learnwithoddlaw.com/images/favicon.png</loc>
-    <image:image>
-      <image:loc>https://learnwithoddlaw.com/images/favicon.png</image:loc>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://learnwithoddlaw.com/images/instagram%20icon.png</loc>
-    <image:image>
-      <image:loc>https://learnwithoddlaw.com/images/instagram%20icon.png</image:loc>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://learnwithoddlaw.com/images/key-to-the-courthouse-banner.png</loc>
-    <image:image>
-      <image:loc>https://learnwithoddlaw.com/images/key-to-the-courthouse-banner.png</image:loc>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://learnwithoddlaw.com/images/linkedin%20icon.png</loc>
-    <image:image>
-      <image:loc>https://learnwithoddlaw.com/images/linkedin%20icon.png</image:loc>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://learnwithoddlaw.com/images/mr%20oddlaw%20watermark%20for%20videos.png</loc>
-    <image:image>
-      <image:loc>https://learnwithoddlaw.com/images/mr%20oddlaw%20watermark%20for%20videos.png</image:loc>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://learnwithoddlaw.com/images/oddlaw%20holding%20book.jpg</loc>
-    <image:image>
-      <image:loc>https://learnwithoddlaw.com/images/oddlaw%20holding%20book.jpg</image:loc>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://learnwithoddlaw.com/images/oddlaw-hero-amplified.png</loc>
-    <image:image>
-      <image:loc>https://learnwithoddlaw.com/images/oddlaw-hero-amplified.png</image:loc>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://learnwithoddlaw.com/images/oddlaw-hero.png</loc>
-    <image:image>
-      <image:loc>https://learnwithoddlaw.com/images/oddlaw-hero.png</image:loc>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://learnwithoddlaw.com/images/oddlaw-prose-handbook-offer.png</loc>
-    <image:image>
-      <image:loc>https://learnwithoddlaw.com/images/oddlaw-prose-handbook-offer.png</image:loc>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://learnwithoddlaw.com/images/social-preview.jpg</loc>
-    <image:image>
-      <image:loc>https://learnwithoddlaw.com/images/social-preview.jpg</image:loc>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://learnwithoddlaw.com/images/social-preview3.png</loc>
-    <image:image>
-      <image:loc>https://learnwithoddlaw.com/images/social-preview3.png</image:loc>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://learnwithoddlaw.com/images/tiktok%20icon.png</loc>
-    <image:image>
-      <image:loc>https://learnwithoddlaw.com/images/tiktok%20icon.png</image:loc>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://learnwithoddlaw.com/images/x%20icon.png</loc>
-    <image:image>
-      <image:loc>https://learnwithoddlaw.com/images/x%20icon.png</image:loc>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://learnwithoddlaw.com/images/youtube%20icon.png</loc>
-    <image:image>
-      <image:loc>https://learnwithoddlaw.com/images/youtube%20icon.png</image:loc>
-    </image:image>
-  </url>
-
-
-  <!-- ========================= -->
-  <!-- Video                     -->
-  <!-- ========================= -->
-  
-  <url>
-    <loc>https://learnwithoddlaw.com/oddlaw_animation.mp4</loc>
-    <video:video>
-      <video:content_loc>https://learnwithoddlaw.com/oddlaw_animation.mp4</video:content_loc>
-      <video:thumbnail_loc>https://learnwithoddlaw.com/images/social-preview3.png</video:thumbnail_loc>
-      <video:title>Learn With Mr. Oddlaw — Intro Animation</video:title>
-      <video:description>Legal empowerment intro video featuring Mr. Oddlaw.</video:description>
-    </video:video>
-  </url>
-
-</urlset>
