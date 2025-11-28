@@ -2,44 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
+  <!-- Homepage Video -->
   <url>
-    <loc>https://learnwithoddlaw.com</loc>
-
+    <loc>https://learnwithoddlaw.com/</loc>
     <video:video>
-      <video:title>Mr. Oddlaw — Intro Animation</video:title>
+      <video:title>Oddlaw Reacts: Pro Se Fails (Homepage Feature)</video:title>
       <video:description>
-        A short animated introduction featuring Mr. Oddlaw explaining legal empowerment in a fun, visual format.
+        A short preview clip featuring Mr. Oddlaw breaking down common pro se mistakes and showing how legal procedure actually works.
       </video:description>
-
-      <!-- REQUIRED THUMBNAIL -->
       <video:thumbnail_loc>
-        https://learnwithoddlaw.com/images/social-preview3.png
+        https://learnwithoddlaw.com/images/oddlaw-reacts-thumb.jpg
       </video:thumbnail_loc>
-
-      <!-- LINK TO THE VIDEO FILE -->
       <video:content_loc>
         https://learnwithoddlaw.com/videos/oddlaw-reacts-prose-fails.mp4
       </video:content_loc>
-
-      <!-- OPTIONAL BUT RECOMMENDED -->
       <video:duration>22</video:duration>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
+  </url>
 
-  <loc>https://learnwithoddlaw.com/oddlaw-reacts-prose-fails.html</loc>
-  <video:video>
-    <video:content_loc>https://learnwithoddlaw.com/videos/oddlaw-reacts-prose-fails.mp4</video:content_loc>
-    <video:thumbnail_loc>https://learnwithoddlaw.com/images/oddlaw-reacts-thumb.jpg</video:thumbnail_loc>
-    <video:title>Oddlaw Reacts: Pro Se Fails</video:title>
-    <video:description>Mr. Oddlaw reacts to common pro se mistakes and explains how to avoid them.</video:description>
-  </video:video>
-          
+  <!-- Dedicated Watch Page Video -->
+  <url>
+    <loc>https://learnwithoddlaw.com/oddlaw-reacts-prose-fails.html</loc>
+    <video:video>
+      <video:title>Oddlaw Reacts: Pro Se Fails</video:title>
+      <video:description>
+        Mr. Oddlaw reacts to common pro se mistakes — missed deadlines, bad motions, poor evidence handling, and courtroom missteps — and explains how to fix them.
+      </video:description>
+      <video:thumbnail_loc>
+        https://learnwithoddlaw.com/images/oddlaw-reacts-thumb.jpg
+      </video:thumbnail_loc>
+      <video:content_loc>
+        https://learnwithoddlaw.com/videos/oddlaw-reacts-prose-fails.mp4
+      </video:content_loc>
+      <video:duration>22</video:duration>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
   </url>
 
 </urlset>
-
-
-
-
-
-
