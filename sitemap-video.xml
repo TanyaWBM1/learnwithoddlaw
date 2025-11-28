@@ -26,9 +26,18 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
 
+  <loc>https://learnwithoddlaw.com/oddlaw-reacts-prose-fails.html</loc>
+  <video:video>
+    <video:content_loc>https://learnwithoddlaw.com/videos/oddlaw-reacts-prose-fails.mp4</video:content_loc>
+    <video:thumbnail_loc>https://learnwithoddlaw.com/images/oddlaw-reacts-thumb.jpg</video:thumbnail_loc>
+    <video:title>Oddlaw Reacts: Pro Se Fails</video:title>
+    <video:description>Mr. Oddlaw reacts to common pro se mistakes and explains how to avoid them.</video:description>
+  </video:video>
+          
   </url>
 
 </urlset>
+
 
 
 
