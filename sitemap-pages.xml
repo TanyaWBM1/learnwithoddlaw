@@ -34,10 +34,11 @@
     <lastmod>2025-11-07</lastmod>
   </url>
 
+  <!-- IMPORTANT: Include Watch Page -->
   <url>
-  <loc>https://learnwithoddlaw.com/oddlaw-reacts-prose-fails.html</loc>
-  <lastmod>2025-11-07</lastmod>
+    <loc>https://learnwithoddlaw.com/oddlaw-reacts-prose-fails.html</loc>
+    <lastmod>2025-11-07</lastmod>
+    <priority>0.90</priority>
   </url>
 
 </urlset>
-
