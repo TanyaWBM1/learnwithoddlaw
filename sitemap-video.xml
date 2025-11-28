@@ -18,7 +18,7 @@
 
       <!-- LINK TO THE VIDEO FILE -->
       <video:content_loc>
-        https://learnwithoddlaw.com/oddlaw_animation.mp4
+        https://learnwithoddlaw.com/videos/oddlaw_animation.mp4
       </video:content_loc>
 
       <!-- OPTIONAL BUT RECOMMENDED -->
@@ -29,6 +29,7 @@
   </url>
 
 </urlset>
+
 
 
 
