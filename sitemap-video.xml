@@ -1,23 +1,38 @@
-<url>
-  <loc>https://learnwithoddlaw.com/oddlaw-reacts-prose-fails.html</loc>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 
-  <video:video>
-    <video:title>Oddlaw Reacts: Pro Se Fails</video:title>
-    <video:description>Mr. Oddlaw reacts to common courtroom mistakes made by pro se litigants — and shows how to avoid them.</video:description>
+  <url>
+    <!-- YOUR video watch page -->
+    <loc>https://learnwithoddlaw.com/oddlaw-reacts-prose-fails.html</loc>
 
-    <video:thumbnail_loc>
-      https://learnwithoddlaw.com/images/oddlaw-reacts-thumb.jpg
-    </video:thumbnail_loc>
+    <video:video>
+      <video:title>Oddlaw Reacts: Pro Se Fails</video:title>
 
-    <video:content_loc>
-      https://adilo.bigcommand.com/bcfc47e7-07b7-4fce-98c1-71aff6636946.mp4
-    </video:content_loc>
+      <video:description>
+        Mr. Oddlaw reacts to common courtroom mistakes made by self-represented litigants — and explains how to avoid them using simple rules of procedure.
+      </video:description>
 
-    <video:player_loc allow_embed="yes">
-      https://adilo.bigcommand.com/watch/yUC6sFks
-    </video:player_loc>
+      <!-- Correct Thumbnail -->
+      <video:thumbnail_loc>
+        https://learnwithoddlaw.com/images/oddlaw-reacts-thumb.jpg
+      </video:thumbnail_loc>
 
-    <video:duration>116</video:duration>
-    <video:family_friendly>yes</video:family_friendly>
-  </video:video>
-</url>
+      <!-- Direct file on Adilo -->
+      <video:content_loc>
+        https://adilo.bigcommand.com/bcfc47e7-07b7-4fce-98c1-71aff6636946.mp4
+      </video:content_loc>
+
+      <!-- Embedded player -->
+      <video:player_loc>
+        https://adilo.bigcommand.com/watch/yUC6sFks
+      </video:player_loc>
+
+      <video:duration>116</video:duration>
+      <video:family_friendly>yes</video:family_friendly>
+
+    </video:video>
+  </url>
+
+</urlset>
