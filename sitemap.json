@@ -1,14 +1,17 @@
 {
   "site": "https://learnwithoddlaw.com",
   "generated": "2025-11-07",
+
   "pages": [
     "https://learnwithoddlaw.com/",
     "https://learnwithoddlaw.com/represent-yourself.html",
     "https://learnwithoddlaw.com/faq.html",
     "https://learnwithoddlaw.com/privacy-policy.html",
     "https://learnwithoddlaw.com/terms-of-use.html",
-    "https://learnwithoddlaw.com/data-deletion.html"
+    "https://learnwithoddlaw.com/data-deletion.html",
+    "https://learnwithoddlaw.com/oddlaw-reacts-prose-fails.html"
   ],
+
   "images": [
     "https://learnwithoddlaw.com/images/facebook%20icon.png",
     "https://learnwithoddlaw.com/images/favicon.png",
@@ -26,7 +29,8 @@
     "https://learnwithoddlaw.com/images/x%20icon.png",
     "https://learnwithoddlaw.com/images/youtube%20icon.png"
   ],
+
   "video": [
-    "https://learnwithoddlaw.com/oddlaw_animation.mp4"
+    "https://adilo.bigcommand.com/bcfc47e7-07b7-4fce-98c1-71aff6636946.mp4"
   ]
 }
