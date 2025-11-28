@@ -1412,26 +1412,28 @@ footer .disclosure {
 </audio>
 
 <style>
-    @media (max-width:1024px) {
-        #sticky-cta { right:14px; bottom:calc(14px + env(safe-area-inset-bottom)); padding:11px 16px; }
-    }
-    @media (max-width:768px) {
-        #sticky-cta { right:12px; bottom:calc(12px + env(safe-area-inset-bottom)); padding:10px 14px; border-radius:8px; }
-        #sticky-cta a { font-size:.95rem; }
-    }
-    @media (hover:hover) {
-        #sticky-cta:hover { background:#A62616; transform:translate(0,-1px) scale(1.04); }
-    }
+@media (max-width:1024px) {
+    #sticky-cta { right:14px; bottom:calc(14px + env(safe-area-inset-bottom)); padding:11px 16px; }
+}
+@media (max-width:768px) {
+    #sticky-cta { right:12px; bottom:calc(12px + env(safe-area-inset-bottom)); padding:10px 14px; border-radius:8px; }
+    #sticky-cta a { font-size:.95rem; }
+}
+@media (hover:hover) {
+    #sticky-cta:hover { background:#A62616; transform:translate(0,-1px) scale(1.04); }
+}
 
-    @keyframes heartbeatPulse {
-        0%   { filter:brightness(1); box-shadow:0 0 14px rgba(212,160,23,0.3); }
-        25%  { filter:brightness(1.1); box-shadow:0 0 25px rgba(212,160,23,0.4); }
-        50%  { filter:brightness(1.25); box-shadow:0 0 30px rgba(212,160,23,0.55); }
-        75%  { filter:brightness(1.1); box-shadow:0 0 22px rgba(212,160,23,0.4); }
-        100% { filter:brightness(1); box-shadow:0 0 14px rgba(212,160,23,0.3); }
-    }
-    .pulse-active { animation: heartbeatPulse 3.5s ease-in-out infinite; }
+@keyframes heartbeatPulse {
+    0%   { filter:brightness(1); box-shadow:0 0 14px rgba(212,160,23,0.3); }
+    25%  { filter:brightness(1.1); box-shadow:0 0 25px rgba(212,160,23,0.4); }
+    50%  { filter:brightness(1.25); box-shadow:0 0 30px rgba(212,160,23,0.55); }
+    75%  { filter:brightness(1.1); box-shadow:0 0 22px rgba(212,160,23,0.4); }
+    100% { filter:brightness(1); box-shadow:0 0 14px rgba(212,160,23,0.3); }
+}
+
+.pulse-active { animation: heartbeatPulse 3.5s ease-in-out infinite; }
 </style>
+
 
 <script>
     // Sticky CTA: slide-in, heartbeat, fade-out when target enters, whoosh sound
